@@ -1,6 +1,5 @@
 {
   "name": "rekrysalo",
-  "homepage": "https://datanomit.fi/TVT2020/mirsjo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +14,6 @@
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "usehooks-ts": "^2.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -1,7 +1,7 @@
-export const SquareButton = (props) => {
+export const SquareButton = () => {
   return (
     <div>
-        <button className="square-button">{props.number}</button>
+        <button className="square-button">1</button>
     </div>
   )
 }

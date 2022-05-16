@@ -1,7 +1,9 @@
 import {Footer} from "../modules/Footer";
+import {TopFooter} from "../modules/TopFooter";
 const Home = () => {
   return (
-      <Footer />
+      <Footer />,
+      <TopFooter />
   )
 }
 export default Home;

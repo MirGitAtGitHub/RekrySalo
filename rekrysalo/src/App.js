@@ -7,10 +7,10 @@ import FourthStep from "./pages/FourthStep";
 import FifthStep from "./pages/FifthStep";
 import SixthStep from "./pages/SixthStep";
 import Verification from "./pages/Verification";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
           <Route index element={<Home />} />
           <Route path="FirstStep" element={<FirstStep />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="SixthStep" element={<SixthStep />} />
           <Route path="Verification" element={<Verification />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

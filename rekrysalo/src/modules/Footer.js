@@ -1,13 +1,7 @@
 export const Footer = () => {
   return (
     <>
-        <div className="footer" style={{backgroundColor:"#282c34",
-    position:"absolute",
-    bottom:0,
-    left:0,
-    right: 0,
-    height: "20%",
-    width:"100%"}}>
+        <div className="footer" style={{backgroundColor:"#282c34",position:"absolute",bottom:0,left:0,right:0,height: "20%"}}>
             <div className="footer-content">
                 <div className="footer-content-left">
                     <div className="footer-content-left-logo">

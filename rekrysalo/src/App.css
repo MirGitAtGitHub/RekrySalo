@@ -65,4 +65,14 @@
 .grid-item {
   color:white;
   font-family:arial;
+<<<<<<< HEAD
+=======
+  font-style:bold;
+}
+* {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 1024px) {
+  
+>>>>>>> parent of 353b93a (Yleisiä muutoksia)
 }

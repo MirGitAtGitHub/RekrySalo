@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.footer {
+  margin-top: 100%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-left {
+  margin-left: 0px;
+  border-left-width: 10%;
+  padding-left: 0px;
+  height: 50%;
+  width: 25%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contact-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
 }
-
-.App-link {
-  color: #61dafb;
+.social-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  position: relative;
+  top: -25%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.links-container {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  left: 25%;
 }

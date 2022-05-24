@@ -109,13 +109,45 @@ a:active {
   left: 25%;
 }
 .home-back-image {
-  margin-right: 0px;
-  padding-right: 0px;
   height: 100%;
   width: 100%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
   background-image: url("./images/teamwork.jpg");
   position: absolute;
+}
+.home-navigation-box {
+  height: 50%;
+  width: 75%;
+  background-color: gray;
+  border-radius: 4%;
+  float: left;
+}
+.home-navigation-box-header {
+  color: dodgerblue;
+}
+.home-navigation-box-navigation {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 4%;
+}
+.square-button {
+  height: 100%;
+  width: 100%;
+  background-color: dodgerblue;
+  border-radius: 4%;
+  text-align: center;
+  padding-bottom: 32%;
+}
+.circle-button {
+  height: 100%;
+  width: 100%;
+  background-color: dodgerblue;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.home-navigation-box-tipbar {
+  width: 100%;
+  background-color: limegreen;
+  border-radius: 4%;
 }

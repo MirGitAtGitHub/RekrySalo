@@ -1,12 +1,12 @@
 import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
-import {HomeNavigationBox} from "../modules/HomeNavigationBox";
+import{TopFooter} from "../modules/TopFooter";
 const Home = () => {
   return (
       <>
         {/* <HomeBackImage />
         <Footer /> */}
-        <HomeNavigationBox />
+        <TopFooter text="Testiteksti" />
       </>
   )
 }

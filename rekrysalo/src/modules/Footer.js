@@ -1,50 +1,31 @@
+import logo from "../images/Yrityssalo_logo.png";
 export const Footer = () => {
   return (
-    <>
-        <div className="footer" style={{backgroundColor:"#282c34",
-    position:"absolute",
-    bottom:"0%",
-    left:"0%",
-    right: "0%",
-    height: "20%",
-    width:"100%"}}>
-            <div className="footer-content" style={{position:"relative"}}>
-                <div className="footer-content-left" style={{position:"relative"}}>
-                    <div className="footer-content-left-logo" style={{position:"absolute"}}>
-                        <img src={require('../images/Yrityssalo_logo.png')} alt="logo" style={{height: "100%",width: "100%",position:"relative"}} />
-                    </div>
-                </div>
-                <div className="footer-content-right">
-                    <div className="footer-content-right-links">
-                        <div className="footer-content-right-links-item">
-                            <div className="grid-container" style={{display: "grid",columnGap: "25%",gridTemplateColumns: "auto auto auto",gridTemplateRows:"auto auto auto auto auto",position:"absolute",top:"25%",right:"0%",marginBottom:"0%",marginRight:"15%"}}>
-                                <div className="grid-container" style={{display: "grid",rowGap:"3%",gridTemplateColumns: "auto",gridTemplateRows:"auto auto auto auto auto"}}>
-                                    <a href="https://www.google.com/maps/place/Joensuunkatu+7,+24100+Salo/@60.3876751,23.1039557,17z/data=!3m1!4b1!4m5!3m4!1s0x468c46ffa6af4223:0xe37ef9d45f7aa3cf!8m2!3d60.3876751!4d23.1061497"><div className="grid-item">Joensuunkatu 7</div>
-                                    <div className="grid-item">24100 SALO</div></a>
-                                    <div className="grid-item">044 546 0043</div>
-                                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbQfVkJWcRQWXdtxXwHCZDwvJsffvDtJndqnXFGQlLsXmfdlHnSKHVBnFdtJXrBtHdb"><div className="grid-item">Yrityssalo@yrityssalo.fi</div></a>
-                                    <div className="grid-item" hidden>Hei!</div>
-                                </div>
-                                <div className="grid-container" style={{display: "grid",rowGap:"3%",gridTemplateColumns: "auto",gridTemplateRows:"auto auto auto auto auto"}}>
-                                    <a href="https://toihinsaloon.fi"><div className="grid-item">toihinsaloon.fi</div></a>
-                                    <a href="https://investinsalo.fi"><div className="grid-item">investinsalo.fi</div></a>
-                                    <a href="https://yrityssalo.fi/info/toimitilapalvelut-ja-vapaat-toimitilat/"><div className="grid-item">Vapaat toimitilat</div></a>
-                                    <a href="https://visitsalo.fi"><div className="grid-item">visitsalo.fi</div></a>
-                                    <div className="grid-item" hidden>Hei!</div>
-                                </div>
-                                <div class="grid-container" style={{display: "grid",rowGap:"3%",gridTemplateColumns: "auto",gridTemplateRows:"auto auto auto auto auto"}}>
-                                    <a href="https://twitter.com/yrityssalooy"><div className="grid-item">Twitter</div></a>
-                                    <a href="https://fi.linkedin.com/company/yrityssalo-ltd.?original_referer=https%3A%2F%2Fwww.google.com%2F"><div className="grid-item">LinkedIn</div></a>
-                                    <a href="https://fi-fi.facebook.com/yrityssalo/"><div className="grid-item">Facebook</div></a>
-                                    <a href="https://www.instagram.com/yrityssalo"><div className="grid-item">Instagram</div></a>
-                                    <a href="https://www.youtube.com/channel/UCkfQiLLkGcMBBkOy1ghBNHQ"><div className="grid-item">YouTube</div></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <footer className="footer">
+          <div className="logo-left">
+                <img src={logo} alt="logo" className="logo" />
+          </div>
+          <div className="links-container">
+            <div className="contact-links-right">
+              <a href="https://www.google.com/maps/place/Joensuunkatu+7,+24100+Salo/@60.3876751,23.1039557,17z/data=!3m1!4b1!4m5!3m4!1s0x468c46ffa6af4223:0xe37ef9d45f7aa3cf!8m2!3d60.3876751!4d23.1061497" style={{pointerEvents: "none"}}>Joensuunkatu 7</a>
+              <a href="https://www.google.com/maps/place/24100+Salo/@60.3800465,23.0778777,12z/data=!3m1!4b1!4m5!3m4!1s0x468c46357b1fedd7:0x1c00b55478583980!8m2!3d60.3787693!4d23.1529999" style={{pointerEvents: "none"}}>24100 SALO</a>
+              <a href="" style={{pointerEvents: "none"}}>044 546 0043</a>
+              <a href="" style={{pointerEvents: "none"}}>Yrityssalo@yrityssalo.fi</a>
             </div>
-        </div>
-    </>
-    )
+            <div className="links-right">
+              <a href="https://toihinsaloon.fi">toihinsaloon.fi</a>
+              <a href="https://investinsalo.fi">investinsalo.fi</a>
+              <a href="https://investinsalo.fi/vapaat-toimitilat-ja-yritystontit/">Vapaat toimitilat</a>
+              <a href="https://visitsalo.fi">visitsalo.fi</a>
+            </div>
+            <div className="social-links-right">
+              <a href="https://twitter.com/yrityssalooy">Twitter</a>
+              <a href="https://fi.linkedin.com/company/yrityssalo-ltd.">LinkedIn</a>
+              <a href="https://www.facebook.com/yrityssalo/">Facebook</a>
+              <a href="https://www.instagram.com/yrityssalo/?hl=fi">Instagram</a>
+              <a href="https://www.youtube.com/channel/UCkfQiLLkGcMBBkOy1ghBNHQ">YouTube</a>
+            </div>
+         </div>
+      </footer>
+    );
 }

@@ -1,75 +1,153 @@
-.App {
-  text-align: center;
+.footer {
+  top: 100%;
+  right: 0%;
+  left: 0%;
+  background-color: #333333;
+  position: absolute;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:link {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.circle-button {
-  background-color: steelblue;
-  border-radius: 100%;
-  height: 50px;
-  width: 50px;
-  border: none;
+a:visited {
+  text-decoration: none;
   color: white;
-  font-family: arial;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+}
+.logo-left {
+  margin-left: 0px;
+  border-left-width: 10%;
+  padding-left: 0px;
+  height: 50%;
+  width: 25%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
   display: inline-block;
-  font-size: 45px;
-  font-style: bold;
-  text-align: center;
 }
-.square-button {
-  background-color: steelblue;
-  border-radius: 3%;
+.links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.contact-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.social-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.links-container {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  left: 25%;
+}
+.home-back-image {
   height: 100%;
   width: 100%;
-  border: none;
-  color: white;
-  font-family: arial;
-  display: inline-block;
-  font-size: 200%;
-  font-style: bold;
+  background-image: url("./images/teamwork.jpg");
+  position: absolute;
+}
+.home-navigation-box {
+  height: 50%;
+  width: 75%;
+  background-color: gray;
+  border-radius: 4%;
+  float: left;
+}
+.home-navigation-box-header {
+  color: dodgerblue;
+}
+.home-navigation-box-navigation {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 4%;
+}
+.square-button {
+  height: 100%;
+  width: 100%;
+  background-color: dodgerblue;
+  border-radius: 4%;
   text-align: center;
+  padding-bottom: 32%;
 }
-.grid-item {
-  color:white;
-  font-family:arial;
-  font-style:bold;
+.circle-button {
+  height: 100%;
+  width: 100%;
+  background-color: dodgerblue;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
 }
-* {
-  box-sizing: border-box;
-}
-@media only screen and (min-width: 1024px) {
-  
+.home-navigation-box-tipbar {
+  width: 100%;
+  background-color: limegreen;
+  border-radius: 4%;
 }

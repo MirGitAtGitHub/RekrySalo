@@ -1,7 +1,5 @@
-export const SquareButton = () => {
+export const SquareButton = (props) => {
   return (
-    <div>
-        <button className="square-button">1</button>
-    </div>
-  )
+      <a href={props.address}><div className="square-button">{props.number}</div></a>
+  );
 }

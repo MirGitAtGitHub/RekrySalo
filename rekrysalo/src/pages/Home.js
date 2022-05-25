@@ -1,11 +1,14 @@
-import {TopFooter} from "../modules/TopFooter";
+import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
+import {HomeNavigationBox} from "../modules/HomeNavigationBox";
 const Home = () => {
   return (
-    <>
-      <TopFooter />,
-      <Footer />
-    </>
+      <>
+        {/* <HomeBackImage />
+        <Footer /> */}
+        <HomeNavigationBox />
+      </>
   )
 }
-export default Home;
+
+export default Home

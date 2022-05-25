@@ -1,7 +1,5 @@
-export const CircleButton = () => {
+export const CircleButton = (props) => {
   return (
-    <div>
-        <button className="circle-button">!</button>
-    </div>
-  )
+      <a href="" style={{pointerEvents: props.pointerevents}}><div className="circle-button">{props.text}</div></a>
+  );
 }

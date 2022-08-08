@@ -4,8 +4,8 @@ import{TopFooter} from "../modules/TopFooter";
 const Home = () => {
   return (
       <>
-        {/* <HomeBackImage />
-        <Footer /> */}
+        <HomeBackImage />
+        <Footer />
         <TopFooter text="Testiteksti" />
       </>
   )

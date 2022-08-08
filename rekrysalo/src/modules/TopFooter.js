@@ -5,6 +5,7 @@ export const TopFooter = (props) => {
       <div className="top-header-container">
           <h1 className="top-header-header">{props.text}</h1>
           <div className="top-navigation">
+            <div></div>
            <SquareButton address="" number="Home" />
            <SquareButton address="" number="1" />
            <SquareButton address="" number="2" />

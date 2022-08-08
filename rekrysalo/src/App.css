@@ -1,3 +1,4 @@
+
 .footer {
   top: 100%;
   right: 0%;
@@ -112,7 +113,7 @@ a:active {
   height: 100%;
   width: 100%;
   background-image: url("./images/teamwork.jpg");
-  position: absolute;
+  position: fixed;
 }
 .home-navigation-box {
   height: 50%;
@@ -131,16 +132,18 @@ a:active {
   column-gap: 4%;
 }
 .square-button {
-  height: 100%;
+  height: 50%;
   width: 100%;
-  background-color: dodgerblue;
+  background-color: steelblue;
   border-radius: 5%;
+  font-size: 300%;
+  
 
 }
 .circle-button {
   height: 100%;
   width: 100%;
-  background-color: dodgerblue;
+  background-color: steelblue;
   border-radius: 100%;
   text-align: center;
   display: inline-block;
@@ -153,7 +156,7 @@ a:active {
 .top-header-container {
   height: auto;
   width: auto;
-  background-color: dodgerblue;
+  background-color: steelblue;
   position: fixed;
   top: 0%;
   right: 0%;
@@ -167,18 +170,20 @@ a:active {
   bottom: 20%;
 }
 .top-navigation {
+  height: 120%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
   grid-template-rows: auto;
-  column-gap: 5%;
+  column-gap: 2%;
   background-color: whitesmoke;
   padding-bottom: 2.5%;
   position: relative;
-  bottom: 12%;
+  bottom: 40%;
+  
 }
 .square-button-text {
-  position: relative;
+  position: inherit;
   padding-left: 0%;
-  padding-top: 30%;
   padding-right: 0%;
+  
 }

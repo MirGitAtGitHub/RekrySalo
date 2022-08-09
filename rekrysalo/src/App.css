@@ -123,7 +123,7 @@ a:active {
   float: left;
 }
 .home-navigation-box-header {
-  color: dodgerblue;
+  color: steelblue;
 }
 .home-navigation-box-navigation {
   display: grid;
@@ -176,14 +176,36 @@ a:active {
   grid-template-rows: auto;
   column-gap: 2%;
   background-color: whitesmoke;
-  padding-bottom: 2.5%;
-  position: relative;
-  bottom: 40%;
+  
   
 }
+.top-header-space {
+  position:absolute;
+  top: 70%;
+  width: 100%;
+}
 .square-button-text {
-  position: inherit;
+  position: relative;
   padding-left: 0%;
   padding-right: 0%;
   
+}
+.mid {
+  background-color: whitesmoke;
+  padding: 50px;
+  margin: auto;
+  position: absolute;
+  margin-top: 15%;
+  left: 27.5%;
+}
+.question {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+.answer {
+  
+}
+textarea {
+  resize: none;
 }

@@ -1,11 +1,26 @@
 
-.footer {
-  top: 100%;
-  right: 0%;
-  left: 0%;
-  background-color: #333333;
-  position: absolute;
+.footer-space {
+
 }
+.footer {
+  position:fixed;
+          left: 0;
+          bottom: 0;
+          right: 0;
+  background-color: #333333;
+  
+}
+.Body {
+  display: grid;
+    grid-gap: 1em 0;
+    grid: auto auto 1fr / 10vw 1fr 10vw;
+    margin: 0;
+    min-height: calc(100vh - 40px);
+}
+.Content {
+  flex: 1 0 auto;
+}
+
 a:link {
   text-decoration: none;
   color: white;
@@ -157,7 +172,7 @@ a:active {
   height: auto;
   width: auto;
   background-color: steelblue;
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
   left: 0%;
@@ -195,16 +210,13 @@ a:active {
   padding: 50px;
   margin: auto;
   position: absolute;
-  margin-top: 15%;
+  margin-top: 16%;
   left: 27.5%;
 }
 .question {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #333333;
-}
-.answer {
-  
 }
 textarea {
   resize: none;

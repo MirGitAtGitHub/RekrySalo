@@ -4,13 +4,40 @@ import{TopFooter} from "../modules/TopFooter";
 import{Middle} from "../modules/Middle";
 const Home = () => {
   return (
-      <>
-        {<HomeBackImage />}
-        <Footer />
-        <Middle />
-        <TopFooter text="Testiteksti" />
-        
-      </>
+      <html>
+        <body className="Body">
+          
+          <div className="Content">
+            <HomeBackImage />
+            <Middle />
+          </div>
+
+          <div className="Header">
+            <TopFooter text="Testiteksti" />
+          </div>
+          
+          <div>
+            {Array(39)
+            .fill()
+            .map((_, i) => (
+              <p key={i}>{i}</p>
+            ))}
+          </div>
+         
+          <div
+            style={{
+              position: "fixed",
+              left: 0,
+              bottom: 0,
+              right: 0,
+              backgroundColor: "green"
+            }}
+          >
+            <Footer />
+          </div>
+        </body>
+
+      </html>
   )
 }
 

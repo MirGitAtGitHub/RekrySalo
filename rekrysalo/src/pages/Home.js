@@ -9,29 +9,29 @@ const Home = () => {
           <div className="Content">
             <HomeBackImage />
             <div className="mid">
-                <p className="question">Hello im just a test text space thingy,</p>
-                <textarea Classname="answer" rows="10" cols="70">
-                    Type Here.
+                <p className="question">Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
+                <textarea className="answer" rows="10" cols="70">
                 </textarea>
-                <p className="question">Toinen kysymys, oletko koditon?</p>
-                <textarea Classname="answer" rows="10" cols="70">
-                    Type Here.
+                <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
+                <textarea className="answer" rows="10" cols="70">
                 </textarea>
                 <div>
-                  <input type={"radio"} id="1" name="Valinta"></input>
+                  <input type={"radio"} id="1" name="Valinta" value="A"></input>
                   <label for="1">Esimerkki A</label>
-                  <input type={"radio"} id="2" name="Valinta"></input>
-                  <label for="1">Esimerkki B</label>
-                  <input type={"radio"} id="3" name="Valinta"></input>
-                  <label for="1">Esimerkki C</label>
+                  <input type={"radio"} id="2" name="Valinta" value="B"></input>
+                  <label for="2">Esimerkki B</label>
+                  <input type={"radio"} id="3" name="Valinta" value="C"></input>
+                  <label for="3">Esimerkki C</label>
                 </div>
-                <p className="question">Kolmas kysymys, oletko ihminen?</p>
-                <textarea Classname="answer" rows="10" cols="70">
-                    Type Here.
+                <p className="question">Aikatauluta rekrytointisi:</p>
+                <textarea className="answer" rows="10" cols="70">
                 </textarea>
-                <p className="question">Neljäs kysymys, oletko iloinen?</p>
-                <textarea Classname="answer" rows="10" cols="70">
-                    Type Here.
+                <div>
+                  <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki"></input>
+                  <label for="1">Esimerkki</label>
+                </div>
+                <p className="question">Arvioi budjetti rekrytoinnille:</p>
+                <textarea className="answer" rows="10" cols="70">
                 </textarea>
                 <p></p>
                 
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
 
           <div className="Header">
-            <TopFooter text="Testiteksti" />
+            <TopFooter text="OSAAMISEN TARVE" />
           </div>
           
           <div>

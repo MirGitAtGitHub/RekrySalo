@@ -8,7 +8,7 @@ export const TopFooter = (props) => {
             <div className="top-navigation">
               <div></div>
               <SquareButton address="" number="Home" />
-              <SquareButton address="" number="1" />
+              <SquareButton address="" number="1" text="Osaamisen tarve" />
               <SquareButton address="" number="2" />
               <SquareButton address="" number="3" />
               <SquareButton address="" number="4" />

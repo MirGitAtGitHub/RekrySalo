@@ -197,7 +197,7 @@ a:active {
   top: 70%;
   width: 100%;
 }
-.square-button-text {
+.square-button-number {
   position: relative;
   padding-left: 0%;
   padding-right: 0%;
@@ -218,4 +218,54 @@ a:active {
 }
 textarea {
   resize: none;
+}
+input[type=radio]{
+  border: 1px solid dimgrey;
+  -webkit-appearance: none;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:4px;
+  padding-left:4px;
+  border-radius:2px;
+}
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+input[type=radio]:checked {
+  background-color:steelblue;
+}
+input[type=radio]:after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+input[type=checkbox]{
+  border: 1px solid dimgrey;
+  -webkit-appearance: none;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:4px;
+  padding-left:4px;
+  border-radius:2px;
+}
+input[type=checkbox]:focus {
+  outline-color: transparent;
+}
+input[type=checkbox]:checked {
+  background-color:steelblue;
+}
+input[type=checkbox]:after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
 }

@@ -1,7 +1,6 @@
 import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
-import{Middle} from "../modules/Middle";
 const Home = () => {
   return (
       <html>
@@ -9,7 +8,26 @@ const Home = () => {
           
           <div className="Content">
             <HomeBackImage />
-            <Middle />
+            <div className="mid">
+                <p className="question">Hello im just a test text space thingy,</p>
+                <textarea Classname="answer" rows="10" cols="70">
+                    Type Here.
+                </textarea>
+                <p className="question">Toinen kysymys, oletko koditon?</p>
+                <textarea Classname="answer" rows="10" cols="70">
+                    Type Here.
+                </textarea>
+                <p className="question">Kolmas kysymys, oletko ihminen?</p>
+                <textarea Classname="answer" rows="10" cols="70">
+                    Type Here.
+                </textarea>
+                <p className="question">Neljäs kysymys, oletko iloinen?</p>
+                <textarea Classname="answer" rows="10" cols="70">
+                    Type Here.
+                </textarea>
+                <p></p>
+                
+            </div>
           </div>
 
           <div className="Header">
@@ -17,7 +35,7 @@ const Home = () => {
           </div>
           
           <div>
-            {Array(39)
+            {Array(40)
             .fill()
             .map((_, i) => (
               <p key={i}>{i}</p>

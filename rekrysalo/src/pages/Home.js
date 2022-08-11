@@ -17,6 +17,14 @@ const Home = () => {
                 <textarea Classname="answer" rows="10" cols="70">
                     Type Here.
                 </textarea>
+                <div>
+                  <input type={"radio"} id="1" name="Valinta"></input>
+                  <label for="1">Esimerkki A</label>
+                  <input type={"radio"} id="2" name="Valinta"></input>
+                  <label for="1">Esimerkki B</label>
+                  <input type={"radio"} id="3" name="Valinta"></input>
+                  <label for="1">Esimerkki C</label>
+                </div>
                 <p className="question">Kolmas kysymys, oletko ihminen?</p>
                 <textarea Classname="answer" rows="10" cols="70">
                     Type Here.

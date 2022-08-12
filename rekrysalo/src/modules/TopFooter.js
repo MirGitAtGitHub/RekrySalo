@@ -9,8 +9,8 @@ export const TopFooter = (props) => {
               <div></div>
               <SquareButton address="" number="Home" />
               
-              <div className="box">
-                <a href="https://www.youtube.com">
+              <div className="box-current">
+                <a href="https://www.youtube.com" target="_blank">
                   <h1 className="hed">1</h1>
                   <p className="smol2">{"Osaamisen tarve"}</p>
                 </a>

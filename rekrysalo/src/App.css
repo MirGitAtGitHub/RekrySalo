@@ -270,8 +270,16 @@ input[type=checkbox]:after {
   transition: transform 0.2s ease-in-out;
 }
 
-.box{
+.box-current{
   background-color: steelblue;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left:5px;
+  padding-right:5px;
+}
+.box{
+  background-color: lime;
   border-radius: 5px;
   margin-top: auto;
   margin-bottom: auto;

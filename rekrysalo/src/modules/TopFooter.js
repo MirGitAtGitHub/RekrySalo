@@ -8,12 +8,49 @@ export const TopFooter = (props) => {
             <div className="top-navigation">
               <div></div>
               <SquareButton address="" number="Home" />
-              <SquareButton address="" number="1" text="Osaamisen tarve" />
-              <SquareButton address="" number="2" />
-              <SquareButton address="" number="3" />
-              <SquareButton address="" number="4" />
-              <SquareButton address="" number="5" />
-              <SquareButton address="" number="6" />
+              
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">1</h1>
+                  <p className="smol2">{"Osaamisen tarve"}</p>
+                </a>
+              </div>
+
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">2</h1>
+                  <p className="smol2">{"Työpaikka- ilmoitus"}</p>
+                </a>
+              </div>
+
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">3</h1>
+                  <p className="smol2">{"Hakemusten käsittely"}</p>
+                </a>
+              </div>
+
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">4</h1>
+                  <p className="smol">{"Haastattelu"}</p>
+                </a>
+              </div>
+
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">5</h1>
+                  <p className="smol">{"Sopimus"}</p>
+                </a>
+              </div>
+
+              <div className="box">
+                <a href="https://www.youtube.com">
+                  <h1 className="hed">6</h1>
+                  <p className="smol">{"Perehdys"}</p>
+                </a>
+              </div>
+
               <SquareButton address="" number="Check" />
             </div>
           </div>

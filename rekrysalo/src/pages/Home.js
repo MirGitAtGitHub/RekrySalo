@@ -43,7 +43,7 @@ const Home = () => {
           </div>
           
           <div>
-            {Array(40)
+            {Array(39)
             .fill()
             .map((_, i) => (
               <p key={i}>{i}</p>

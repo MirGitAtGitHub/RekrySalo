@@ -34,6 +34,8 @@ const Home = () => {
                 <textarea className="answer" rows="10" cols="70">
                 </textarea>
                 <p></p>
+                <div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div>
+                <div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div>
                 
             </div>
           </div>

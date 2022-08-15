@@ -67,12 +67,15 @@ const Home2 = () => {
                 <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
                 <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
                 </textarea>
+                <p></p>
+                <div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div>
+                <div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div>
                 
             </div>
           </div>
 
           <div className="Header">
-            <TopFooter text="OSAAMISEN TARVE" />
+            <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
           </div>
           
           <div>

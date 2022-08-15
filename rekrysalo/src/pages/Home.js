@@ -33,12 +33,13 @@ const Home = () => {
                 <p className="question">Arvioi budjetti rekrytoinnille:</p>
                 <textarea className="answer" rows="10" cols="70">
                 </textarea>
+                <p></p>
                 
             </div>
           </div>
 
           <div className="Header">
-            <TopFooter text="OSAAMISEN TARVE" />
+            <TopFooter text="OSAAMISEN TARVE" current="1" />
           </div>
           
           <div>

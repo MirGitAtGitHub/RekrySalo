@@ -311,3 +311,64 @@ input[type=checkbox]:after {
 .boxed{
   font-size: medium;
 }
+.navigation-button-arrow-right {
+  position: relative;
+  width:200px;
+  height:40px;
+  margin-right:40px;
+  color:#FFFFFF;
+  background-color:steelblue;
+  text-align:center;
+  line-height:40px;
+  float:right;
+}
+.navigation-button-arrow-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*.navigation-button-arrow-right:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top:0px;
+  width:0px;
+  height:0px;
+  border-top:20px solid transparent;
+  border-right:40px solid steelblue;
+  border-bottom:20px solid transparent;
+}*/
+
+.navigation-button-arrow-right:after {
+  content:"";
+  position: absolute;
+  left: 100%;
+  top:0px;
+  width:0px;
+  height:0px;
+  border-top:20px solid transparent;
+  border-left:40px solid steelblue;
+  border-bottom:20px solid transparent;
+}
+.navigation-button-arrow-left {
+  position: relative;
+  width:200px;
+  height:40px;
+  margin-left:40px;
+  color:#FFFFFF;
+  background-color:steelblue;
+  text-align:center;
+  line-height:40px;
+  float:left
+}
+.navigation-button-arrow-left:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top:0px;
+  width:0px;
+  height:0px;
+  border-top:20px solid transparent;
+  border-right:40px solid steelblue;
+  border-bottom:20px solid transparent;
+}

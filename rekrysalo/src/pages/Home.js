@@ -33,7 +33,6 @@ const Home = () => {
                 <p className="question">Arvioi budjetti rekrytoinnille:</p>
                 <textarea className="answer" rows="10" cols="70">
                 </textarea>
-                <p></p>
                 
             </div>
           </div>
@@ -50,15 +49,7 @@ const Home = () => {
             ))}
           </div>
          
-          <div
-            style={{
-              position: "fixed",
-              left: 0,
-              bottom: 0,
-              right: 0,
-              backgroundColor: "green"
-            }}
-          >
+          <div>
             <Footer />
           </div>
         </body>

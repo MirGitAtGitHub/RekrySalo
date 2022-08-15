@@ -22,7 +22,7 @@ const Home2 = () => {
 
 
                 <p className="question">Yrityksen kuvaus:</p>
-                <textarea className="answer" rows="10" cols="70">
+                <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
                 </textarea>
 
                 <p className="question">Työsopimuksen tyyppi</p>
@@ -42,10 +42,31 @@ const Home2 = () => {
                 <textarea className="answer" rows="1" cols="70">
                 </textarea>
                 
-                <p className="question">Arvioi budjetti rekrytoinnille:</p>
-                <textarea className="answer" rows="10" cols="70">
+                <p className="question">Työn kuvaus:</p>
+                <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
                 </textarea>
-                <p></p>
+
+                <p className="question">Ilmoittajan nimi:</p>
+                <textarea className="answer" rows="1" cols="70">
+                </textarea>
+
+                <p className="question">Ilmoittajan puhelin:</p>
+                <textarea className="answer" rows="1" cols="70">
+                </textarea>
+
+                <p className="question">Hakemusten vastaanotto sähköpostiosoite:</p>
+                <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
+                </textarea>
+
+                <div>
+                  <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
+                  <input type="date" id="julkaisuaika" name="julkaisuaika" style={{"margin-right":"20px"}}></input>
+                  <input type="date" id="julkaisuaika" name="to_julkaisuaika"></input>
+                </div>
+
+                <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
+                <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
+                </textarea>
                 
             </div>
           </div>
@@ -55,22 +76,14 @@ const Home2 = () => {
           </div>
           
           <div>
-            {Array(35)
+            {Array(46)
             .fill()
             .map((_, i) => (
               <p key={i}>{i}</p>
             ))}
           </div>
          
-          <div
-            style={{
-              position: "fixed",
-              left: 0,
-              bottom: 0,
-              right: 0,
-              backgroundColor: "green"
-            }}
-          >
+          <div>
             <Footer />
           </div>
         </body>

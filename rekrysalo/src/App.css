@@ -372,3 +372,9 @@ input[type=checkbox]:after {
   border-right:40px solid steelblue;
   border-bottom:20px solid transparent;
 }
+
+.bluetext{
+  font-size: larger;
+  color: steelblue;
+  font-weight: 600;
+}

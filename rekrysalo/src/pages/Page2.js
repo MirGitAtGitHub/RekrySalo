@@ -5,95 +5,95 @@ import{Link} from "react-router-dom";
 const Page2 = () => {
   localStorage.setItem("pagenumber","2");
   return (
-      <html>
-        <body className="Body">
-          <div className="Content">
-            <HomeBackImage />
+    <html>
+      <body className="Body">
+        <div className="Content">
+          <HomeBackImage />
 
-            <div className="mid">
-                <p className="question">Yrityksen sijainti:</p>
-                <textarea className="answer" rows="1" cols="70">
-                </textarea>
+          <div className="mid">
+              <p className="question">Yrityksen sijainti:</p>
+              <textarea className="answer" rows="1" cols="70">
+              </textarea>
 
-                <div>
-                    <input type={"radio"} id="1" name="Valinta" value="E"></input>
-                    <label for="1">Etätyö tai monta sijaintia</label>
-                    <input type={"radio"} id="2" name="Valinta" value="F"></input>
-                    <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
-                </div>
+              <div>
+                  <input type={"radio"} id="1" name="Valinta" value="E"></input>
+                  <label for="1">Etätyö tai monta sijaintia</label>
+                  <input type={"radio"} id="2" name="Valinta" value="F"></input>
+                  <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
+              </div>
 
 
-                <p className="question">Yrityksen kuvaus:</p>
-                <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
-                </textarea>
+              <p className="question">Yrityksen kuvaus:</p>
+              <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
+              </textarea>
 
-                <p className="question">Työsopimuksen tyyppi</p>
-                <select className="Dropdown" name="valinta" id="Työ">
-                    <option className="boxed">Määräaikainen</option>
-                    <option className="boxed">Toistaiseksi voimassaolo</option>
-                    <option className="boxed">Harjoittelija</option>
-                </select>
+              <p className="question">Työsopimuksen tyyppi</p>
+              <select className="Dropdown" name="valinta" id="Työ">
+                  <option className="boxed">Määräaikainen</option>
+                  <option className="boxed">Toistaiseksi voimassaolo</option>
+                  <option className="boxed">Harjoittelija</option>
+              </select>
 
-                <p className="question">Työaika:</p>
-                <select className="Dropdown" name="valinta" id="Työ">
-                    <option className="boxed">Kokoaikainen</option>
-                    <option className="boxed">Osa-aikainen</option>
-                </select>
-                
-                <p className="question">Tehtävänimike:</p>
-                <textarea className="answer" rows="1" cols="70">
-                </textarea>
-                
-                <p className="question">Työn kuvaus:</p>
-                <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
-                </textarea>
+              <p className="question">Työaika:</p>
+              <select className="Dropdown" name="valinta" id="Työ">
+                  <option className="boxed">Kokoaikainen</option>
+                  <option className="boxed">Osa-aikainen</option>
+              </select>
+              
+              <p className="question">Tehtävänimike:</p>
+              <textarea className="answer" rows="1" cols="70">
+              </textarea>
+              
+              <p className="question">Työn kuvaus:</p>
+              <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
+              </textarea>
 
-                <p className="question">Ilmoittajan nimi:</p>
-                <textarea className="answer" rows="1" cols="70">
-                </textarea>
+              <p className="question">Ilmoittajan nimi:</p>
+              <textarea className="answer" rows="1" cols="70">
+              </textarea>
 
-                <p className="question">Ilmoittajan puhelin:</p>
-                <textarea className="answer" rows="1" cols="70">
-                </textarea>
+              <p className="question">Ilmoittajan puhelin:</p>
+              <textarea className="answer" rows="1" cols="70">
+              </textarea>
 
-                <p className="question">Hakemusten vastaanotto sähköpostiosoite:</p>
-                <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
-                </textarea>
+              <p className="question">Hakemusten vastaanotto sähköpostiosoite:</p>
+              <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
+              </textarea>
 
-                <div>
-                  <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
-                  <input type="date" id="julkaisuaika" name="julkaisuaika" style={{"margin-right":"20px"}}></input>
-                  <input type="date" id="julkaisuaika" name="to_julkaisuaika"></input>
-                </div>
+              <div>
+                <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
+                <input type="date" id="julkaisuaika" name="julkaisuaika" style={{"margin-right":"20px"}}></input>
+                <input type="date" id="julkaisuaika" name="to_julkaisuaika"></input>
+              </div>
 
-                <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
-                <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
-                </textarea>
-                <p></p>
-                <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
-                <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
-                
-            </div>
+              <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
+              <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
+              </textarea>
+              <p></p>
+              <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
+              <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
+              
           </div>
+        </div>
 
-          <div className="Header">
-            <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
-          </div>
-          
-          <div>
-            {Array(46)
-            .fill()
-            .map((_, i) => (
-              <p key={i}>{i}</p>
-            ))}
-          </div>
-         
-          <div>
-            <Footer />
-          </div>
-        </body>
+        <div className="Header">
+          <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
+        </div>
+        
+        <div>
+          {Array(46)
+          .fill()
+          .map((_, i) => (
+            <p key={i}>{i}</p>
+          ))}
+        </div>
+        
+        <div>
+          <Footer />
+        </div>
+      </body>
 
-      </html>
+    </html>
   )
 }
 

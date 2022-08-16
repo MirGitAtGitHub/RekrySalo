@@ -192,7 +192,7 @@ a:active {
 .top-navigation {
   height: 120%;
   display: grid;
-  grid-template-columns: auto auto 8.5% 8.5% 8.5% 8.5% auto auto auto auto;
+  grid-template-columns: auto auto 8.5% 8.5% 8.5% 8.5% auto 8.5% auto auto;
   grid-template-rows: auto;
   column-gap: 2%;
   background-color: whitesmoke;

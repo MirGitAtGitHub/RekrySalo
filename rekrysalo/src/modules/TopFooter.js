@@ -11,14 +11,14 @@ export const TopFooter = (props) => {
               <SquareButton address="" number="Home" />
               
               <div className={(props.current === "1") ? "box-current" : "box"}>
-                <Link to="/">
+                <Link to="/Page1">
                   <h1 className="hed">1</h1>
                   <p className="smol2">{"Osaamisen tarve"}</p>
                 </Link>
               </div>
 
               <div className={(props.current === "2") ? "box-current" : "box"}>
-                <Link to="/home2">
+                <Link to="/Page2">
                   <h1 className="hed">2</h1>
                   <p className="smol2">{"Työpaikka- ilmoitus"}</p>
                 </Link>

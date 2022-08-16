@@ -1,7 +1,9 @@
 import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
-const Home = () => {
+import{Link} from "react-router-dom";
+const Page1 = () => {
+  localStorage.setItem("pagenumber","1");
   return (
       <html>
         <body className="Body">
@@ -34,8 +36,8 @@ const Home = () => {
                 <textarea className="answer" rows="10" cols="70">
                 </textarea>
                 <p></p>
-                <div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div>
-                <div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div>
+                <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
+                <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
                 
             </div>
           </div>
@@ -61,4 +63,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Page1;

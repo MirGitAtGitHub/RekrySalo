@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Home2 from "./pages/Home2";
-function App() {
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+function App(props) {
   return (
     <BrowserRouter>
       <Routes>
-          <Route index element={<Home />} />
-          <Route path="/home2" element={<Home2 />} />
+          <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : ""} />
+          <Route path={"/Page2"} element={<Page2 />} />
+          <Route path={"/Page1"} element={<Page1 />} />
       </Routes>
     </BrowserRouter>
   );

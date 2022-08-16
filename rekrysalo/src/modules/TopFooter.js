@@ -25,31 +25,31 @@ export const TopFooter = (props) => {
               </div>
 
               <div className={(props.current === "3") ? "box-current" : "box"}>
-                <a href="https://www.youtube.com"target="_blank" rel="noreferrer">
+                <Link to="/Page3">
                   <h1 className="hed">3</h1>
                   <p className="smol2">{"Hakemusten käsittely"}</p>
-                </a>
+                </Link>
               </div>
 
               <div className={(props.current === "4") ? "box-current" : "box"}>
-                <a href="https://www.youtube.com"target="_blank" rel="noreferrer">
+                <Link to="/Page4">
                   <h1 className="hed">4</h1>
                   <p className="smol">{"Haastattelu"}</p>
-                </a>
+                </Link>
               </div>
 
               <div className={(props.current === "5") ? "box-current" : "box"}>
-                <a href="https://www.youtube.com"target="_blank" rel="noreferrer">
+                <Link to="/Page5">
                   <h1 className="hed">5</h1>
                   <p className="smol">{"Sopimus"}</p>
-                </a>
+                </Link>
               </div>
 
               <div className={(props.current === "6") ? "box-current" : "box"}>
-                <a href="https://www.youtube.com"target="_blank" rel="noreferrer">
+                <Link to="/Page6">
                   <h1 className="hed">6</h1>
                   <p className="smol">{"Perehdytys"}</p>
-                </a>
+                </Link>
               </div>
 
               <SquareButton address="" number="Check" />

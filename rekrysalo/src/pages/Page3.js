@@ -2,7 +2,11 @@ import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
+import {useEffect} from 'react';
 const Page3 = () => {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   localStorage.setItem("pagenumber","3");
   return (
     <html>
@@ -43,7 +47,7 @@ const Page3 = () => {
         </div>
 
         <div className="Header">
-          <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
+          <TopFooter text="HAKEMUSTEN KÄSITTELY" current="3" />
         </div>
         
         <div>

@@ -128,6 +128,13 @@ a:active {
   background-image: url("./images/teamwork.jpg");
   position: fixed;
 }
+.home-back-image-nopage {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/teamwork.jpg");
+  position: fixed;
+  filter: grayscale(100%);
+}
 .home-navigation-box {
   height: 50%;
   width: 75%;

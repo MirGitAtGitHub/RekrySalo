@@ -1,19 +1,11 @@
-
+html{
+  background-image: url("./images/teamwork.jpg");
+  background-attachment: fixed;
+}
 
 .footer {
-  position:fixed;
-          left: 0;
-          bottom: 0;
-          right: 0;
+  padding: 1%;
   background-color: #333333;
-  
-}
-.Body {
-  display: grid;
-    grid-gap: 1em 0;
-    grid: auto auto 1fr / 10vw 1fr 10vw;
-    margin: 0;
-    min-height: calc(100vh - 40px);
 }
 .Content {
   flex: 1 0 auto;
@@ -142,6 +134,7 @@ a:active {
   border-radius: 4%;
   float: left;
 }
+
 .home-navigation-box-header {
   color: steelblue;
 }
@@ -177,7 +170,7 @@ a:active {
   height: auto;
   width: auto;
   background-color: steelblue;
-  position: absolute;
+  position: fixed;
   top: 0%;
   right: 0%;
   left: 0%;
@@ -199,6 +192,8 @@ a:active {
   
   
 }
+.Header{
+}
 .top-header-space {
   position:absolute;
   top: 70%;
@@ -211,12 +206,18 @@ a:active {
   
 }
 .mid {
+  margin-top: 0;
   background-color: whitesmoke;
-  padding: 50px;
-  margin: auto;
-  position: absolute;
-  margin-top: 16%;
-  left: 27.5%;
+  padding: 10%;
+  padding-top: 0;
+}
+.mid-grid{
+  margin-top: 18%;
+  height:100%;
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  gap: 1px;
+  grid: auto auto auto;
 }
 .question {
   margin-bottom: 0;

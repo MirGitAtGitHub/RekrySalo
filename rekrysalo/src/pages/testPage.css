@@ -1,0 +1,48 @@
+html {
+    background-image: url("../images/teamwork.jpg");
+    background-attachment: fixed;
+}
+
+.headeri {
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    text-align: center;
+}
+.headeri-grid {
+    margin-top: 5%;
+    height:100%;
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    gap: 1px;
+    grid: auto auto auto;
+}
+.footeri{
+    padding: 1%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.item {
+    margin-top: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.item2 {
+    margin-top: 0;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+.Blue {
+    color: blue;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.layer{
+    z-index: 0;
+}

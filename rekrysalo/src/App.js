@@ -4,6 +4,7 @@ import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import NoPage from "./pages/NoPage";
+import TestPage from './pages/TestPage';
 function App(props) {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ function App(props) {
           <Route path={"/Page2"} element={<Page2 />} />
           <Route path={"/Page1"} element={<Page1 />} />
           <Route path={"*"} element={<NoPage />} />
+          <Route path={"/TestPage"} element={<TestPage />} />
       </Routes>
     </BrowserRouter>
   );

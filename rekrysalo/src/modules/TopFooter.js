@@ -1,4 +1,4 @@
-import {SquareButton} from "./SquareButton";
+//import {SquareButton} from "./SquareButton";
 import {Link} from "react-router-dom";
 export const TopFooter = (props) => {
   return (
@@ -8,12 +8,10 @@ export const TopFooter = (props) => {
           <div className="top-header-space">
             <div className="top-navigation">
               <div></div>
-              <div className="home-icon">
-                <Link to="/Home">
-                  <h1 className="hed">Home</h1>
-                </Link>
-              </div>
-              
+              <Link to="/Home">
+                <div className="home-icon">
+                </div>
+              </Link>
               <div className={(props.current === "1") ? "box-current" : "box"}>
                 <Link to="/Page1">
                   <h1 className="hed">1</h1>
@@ -55,12 +53,10 @@ export const TopFooter = (props) => {
                   <p className="smol">{"Perehdytys"}</p>
                 </Link>
               </div>
-
-              <div className="check-icon">
-                <Link to="/Home">
-                  <h1 className="hed">Check</h1>
-                </Link>
-              </div>
+              <Link to="/Check">
+                <div className="check-icon">
+                </div>
+              </Link>
             </div>
           </div>
       </div>

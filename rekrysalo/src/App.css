@@ -61,6 +61,30 @@ html{
   max-height: 125px;
   min-height: 125px;
 }
+.home-icon{
+  background-image: url("./images/house-icon.png");
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left:0px;
+  padding-right:0px;
+  max-width: 125px;
+  min-width: 125px;
+  max-height: 125px;
+  min-height: 125px;
+}
+.check-icon{
+  background-image: url("./images/check-icon.png");
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left:0px;
+  padding-right:0px;
+  max-width: 125px;
+  min-width: 125px;
+  max-height: 125px;
+  min-height: 125px;
+}
 .smol2 {
   color: whitesmoke;
   margin-top: 0;

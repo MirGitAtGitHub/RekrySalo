@@ -1,11 +1,174 @@
 
-html{
+.html{
   background-image: url("./images/teamwork.jpg");
   background-attachment: fixed;
 }
-
+.html-nopage{
+  background-image: url("./images/teamwork.jpg");
+  background-attachment: fixed;
+  filter: grayscale(100%);
+}
 
 /*Header + Sisältö*/
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+p {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.logo-left {
+  margin-left: 0px;
+  border-left-width: 10%;
+  padding-left: 0px;
+  height: 50%;
+  width: 25%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.contact-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.social-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.links-container {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  left: 25%;
+}
+.home-back-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/teamwork.jpg");
+  position: fixed;
+}
+.home-back-image-nopage {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/teamwork.jpg");
+  position: fixed;
+  filter: grayscale(100%);
+}
+.home-navigation-box {
+  height: 50%;
+  width: 75%;
+  background-color: gray;
+  border-radius: 4%;
+  float: left;
+}
+
+.home-navigation-box-header {
+  color: steelblue;
+}
+.home-navigation-box-navigation {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 4%;
+}
+.square-button {
+  height: 50%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 5%;
+  font-size: 300%;
+  
+
+}
+.circle-button {
+  height: 100%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.home-navigation-box-tipbar {
+  width: 100%;
+  background-color: limegreen;
+  border-radius: 4%;
+}
 .top-header-container {
   height: auto;
   width: auto;

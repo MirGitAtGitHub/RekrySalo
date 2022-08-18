@@ -1,4 +1,4 @@
-import {HomeBackImage} from "../modules/HomeBackImage";
+//import {HomeBackImage} from "../modules/HomeBackImage";
 import './testPage.css';
 
 export const TestPage = () => {

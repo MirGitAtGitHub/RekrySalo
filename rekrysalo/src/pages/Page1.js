@@ -35,9 +35,8 @@ const Page1 = () => {
             </div>
 
             <p className="question">Aikatauluta rekrytointisi:</p>
-            <textarea className="answer" rows="10" cols="70">
-
-            </textarea>
+            <textarea className="answer" rows="10" cols="70"></textarea>
+            
             <div>
               <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki"></input>
               <label for="1">Esimerkki</label>

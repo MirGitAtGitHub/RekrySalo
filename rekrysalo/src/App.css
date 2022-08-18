@@ -72,6 +72,7 @@ html{
   min-width: 125px;
   max-height: 125px;
   min-height: 125px;
+  background-color:whitesmoke;
 }
 .check-icon{
   background-image: url("./images/check-icon.png");
@@ -84,6 +85,7 @@ html{
   min-width: 125px;
   max-height: 125px;
   min-height: 125px;
+  background-color:whitesmoke;
 }
 .smol2 {
   color: whitesmoke;

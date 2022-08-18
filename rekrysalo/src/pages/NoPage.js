@@ -6,19 +6,18 @@ const NoPage = () => {
   return (
     <html className="html-nopage">
       <body className="Body">
-        <div className="uushtml">
         
-          <div className="Content">
-            <div className="mid">
+        <div className="Content">
+          <div className="mid">
               <p className="question"><strong>Virhe 404:</strong> Etsimäsi sivu on voitu poistaa/vaihtanut osoitetta.</p>
-            </div>
-          </div>
-      
-          <div>
           </div>
         </div>
+      
+        <div>
+        </div>
       </body>
-      </html>
+
+    </html>
   )
 }
 

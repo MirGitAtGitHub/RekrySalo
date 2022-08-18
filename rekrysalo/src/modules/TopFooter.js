@@ -8,12 +8,16 @@ export const TopFooter = (props) => {
           <div className="top-header-space">
             <div className="top-navigation">
               <div></div>
-              <SquareButton address="" number="Home" />
+              <div className="home-icon">
+                <Link to="/Home">
+                  <h1 className="hed">Home</h1>
+                </Link>
+              </div>
               
               <div className={(props.current === "1") ? "box-current" : "box"}>
                 <Link to="/Page1">
                   <h1 className="hed">1</h1>
-                  <p className="smol2">{"Osaamisen tarve"}</p>
+                  <p className="smol2">Osaamisen<br/>tarve</p>
                 </Link>
               </div>
 
@@ -52,7 +56,11 @@ export const TopFooter = (props) => {
                 </Link>
               </div>
 
-              <SquareButton address="" number="Check" />
+              <div className="check-icon">
+                <Link to="/Home">
+                  <h1 className="hed">Check</h1>
+                </Link>
+              </div>
             </div>
           </div>
       </div>

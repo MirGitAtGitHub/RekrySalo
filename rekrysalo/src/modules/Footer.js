@@ -7,10 +7,10 @@ export const Footer = () => {
             </div>
             <div className="links-container">
               <div className="contact-links-right">
-                <a href="https://www.google.com/maps/place/Joensuunkatu+7,+24100+Salo/@60.3876751,23.1039557,17z/data=!3m1!4b1!4m5!3m4!1s0x468c46ffa6af4223:0xe37ef9d45f7aa3cf!8m2!3d60.3876751!4d23.1061497">Joensuunkatu 7</a>
-                <a href="https://www.google.com/maps/place/24100+Salo/@60.3800465,23.0778777,12z/data=!3m1!4b1!4m5!3m4!1s0x468c46357b1fedd7:0x1c00b55478583980!8m2!3d60.3787693!4d23.1529999">24100 SALO</a>
-                <p>044 546 0043</p>
-                <p>Yrityssalo@yrityssalo.fi</p>
+                <a href="https://www.google.com/maps/place/Joensuunkatu+7,+24100+Salo/@60.3876751,23.1039557,17z/data=!3m1!4b1!4m5!3m4!1s0x468c46ffa6af4223:0xe37ef9d45f7aa3cf!8m2!3d60.3876751!4d23.1061497" style={{pointerEvents: "none"}}>Joensuunkatu 7</a>
+                <a href="https://www.google.com/maps/place/24100+Salo/@60.3800465,23.0778777,12z/data=!3m1!4b1!4m5!3m4!1s0x468c46357b1fedd7:0x1c00b55478583980!8m2!3d60.3787693!4d23.1529999" style={{pointerEvents: "none"}}>24100 SALO</a>
+                <a href="" style={{pointerEvents: "none"}}>044 546 0043</a>
+                <a href="" style={{pointerEvents: "none"}}>Yrityssalo@yrityssalo.fi</a>
               </div>
               <div className="links-right">
                 <a href="https://toihinsaloon.fi">toihinsaloon.fi</a>

@@ -1,4 +1,4 @@
-//import {HomeBackImage} from "../modules/HomeBackImage";
+import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
@@ -9,7 +9,7 @@ const Page2 = () => {
   }, []);
   localStorage.setItem("pagenumber","2");
   return (
-    <html className="html">
+    <html>
       <body className="Body">
 
       <div className="Header">

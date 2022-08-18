@@ -5,8 +5,8 @@ const NoPage = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   return (
-    <html>
-      <body className="Body">
+    <div className="uushtml">
+      <body className="">
         
         <div className="Content">
           <HomeBackImage nopage={true} />
@@ -19,7 +19,7 @@ const NoPage = () => {
         </div>
       </body>
 
-    </html>
+    </div>
   )
 }
 

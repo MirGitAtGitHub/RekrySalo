@@ -3,6 +3,16 @@ html{
   background-image: url("./images/teamwork.jpg");
   background-attachment: fixed;
 }
+.uushtml{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-image: url("./images/teamwork.jpg");
+  filter:grayscale(100%);
+}
+
 
 
 /*Header + Sisältö*/
@@ -332,13 +342,13 @@ a:active {
 
 
 /*Error screen picture*/
-.home-back-image-nopage {
+/*.home-back-image-nopage {
   height: 100%;
   width: 100%;
   background-image: url("./images/teamwork.jpg");
   position: fixed;
   filter: grayscale(100%);
-}
+}*/
 .Content {
   flex: 1 0 auto;
 }

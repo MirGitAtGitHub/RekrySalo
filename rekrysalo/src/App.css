@@ -506,11 +506,15 @@ a:active {
 
 
 
+
 .uushtml{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+/*Nopage*/
+.uushtml{
   position: fixed;
   left: 0;
   right: 0;
@@ -519,6 +523,8 @@ a:active {
   background-image: url(http://localhost:3000/static/media/teamwork.f078a26d90993061f69b.jpg);
   filter: grayscale(100%);
   margin-top: 0px;
+  background-image: url("./images/teamwork.jpg");
+  filter:grayscale(100%);
 }
 .Content {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

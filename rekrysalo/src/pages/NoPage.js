@@ -4,9 +4,8 @@ const NoPage = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   return (
-    <html className="html-nopage">
+    <html className="uushtml">
       <body className="Body">
-        <div className="uushtml">
         
           <div className="Content">
             <div className="mid">
@@ -16,7 +15,7 @@ const NoPage = () => {
       
           <div>
           </div>
-        </div>
+        
       </body>
       </html>
   )

@@ -1,4 +1,4 @@
-import {HomeBackImage} from "../modules/HomeBackImage";
+//import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";

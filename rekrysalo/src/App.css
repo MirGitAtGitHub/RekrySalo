@@ -139,7 +139,6 @@ input[type=radio]:after {
   height: 0.5em;
   border-radius: 0.5em;
   background-color: whitesmoke;
-  transform: scale(1);
   transition: transform 0.2s ease-in-out;
 }
 input[type=radio]:focus {
@@ -166,7 +165,6 @@ input[type=checkbox]:after {
   height: 0.5em;
   border-radius: 0.5em;
   background-color: whitesmoke;
-  transform: scale(1);
   transition: transform 0.2s ease-in-out;
 }
 input[type=checkbox]:focus {
@@ -345,6 +343,10 @@ a:hover {
   color: whitesmoke;
 }
 a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+p{
   text-decoration: none;
   color: whitesmoke;
 }

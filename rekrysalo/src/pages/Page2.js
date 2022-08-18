@@ -11,13 +11,9 @@ const Page2 = () => {
   return (
     <html>
       <body className="Body">
+        <div className="Content">
+          <HomeBackImage />
 
-      <div className="Header">
-          <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
-        </div>
-
-        <div className="mid-grid">
-          <div></div>
           <div className="mid">
               <p className="question">Yrityksen sijainti:</p>
               <textarea className="answer" rows="1" cols="70">
@@ -75,16 +71,28 @@ const Page2 = () => {
               </div>
 
               <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
-              <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"50px"}}>
+              <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}}>
               </textarea>
               <p></p>
-              <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left" style={{"margin-bottom":"10px"}}><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
+              <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
               <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
               
           </div>
-          <div></div>
         </div>
-        <div className="footer">
+
+        <div className="Header">
+          <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
+        </div>
+        
+        <div>
+          {Array(46)
+          .fill()
+          .map((_, i) => (
+            <p key={i}>{i}</p>
+          ))}
+        </div>
+        
+        <div>
           <Footer />
         </div>
       </body>

@@ -1,171 +1,11 @@
+
 html{
   background-image: url("./images/teamwork.jpg");
   background-attachment: fixed;
 }
 
-.footer {
-  padding: 1%;
-  background-color: #333333;
-}
-.Content {
-  flex: 1 0 auto;
-}
 
-a:link {
-  text-decoration: none;
-  color: whitesmoke;
-}
-a:visited {
-  text-decoration: none;
-  color: whitesmoke;
-}
-a:hover {
-  text-decoration: none;
-  color: whitesmoke;
-}
-a:active {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.logo-left {
-  margin-left: 0px;
-  border-left-width: 10%;
-  padding-left: 0px;
-  height: 50%;
-  width: 25%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-block;
-}
-.links-right {
-  margin-right: 0px;
-  border-right-width: 10%;
-  padding-right: 0px;
-  height: 100%;
-  width: 50%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-grid;
-  column-gap: auto;
-  row-gap: auto;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  position: relative;
-  top: -25%;
-}
-.contact-links-right {
-  margin-right: 0px;
-  border-right-width: 10%;
-  padding-right: 0px;
-  height: 100%;
-  width: 50%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-grid;
-  column-gap: auto;
-  row-gap: auto;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  position: relative;
-  top: -25%;
-}
-.social-links-right {
-  margin-right: 0px;
-  border-right-width: 10%;
-  padding-right: 0px;
-  height: 100%;
-  width: 50%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-grid;
-  column-gap: auto;
-  row-gap: auto;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto;
-  position: relative;
-  top: -25%;
-}
-.logo {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-block;
-}
-.links-container {
-  margin-right: 0px;
-  border-right-width: 10%;
-  padding-right: 0px;
-  height: 100%;
-  width: 50%;
-  margin-bottom: 0px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px;
-  display: inline-grid;
-  column-gap: auto;
-  row-gap: auto;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  position: relative;
-  left: 25%;
-}
-.home-back-image {
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/teamwork.jpg");
-  position: fixed;
-}
-.home-back-image-nopage {
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/teamwork.jpg");
-  position: fixed;
-  filter: grayscale(100%);
-}
-.home-navigation-box {
-  height: 50%;
-  width: 75%;
-  background-color: gray;
-  border-radius: 4%;
-  float: left;
-}
-
-.home-navigation-box-header {
-  color: steelblue;
-}
-.home-navigation-box-navigation {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto;
-  column-gap: 4%;
-}
-.square-button {
-  height: 50%;
-  width: 100%;
-  background-color: steelblue;
-  border-radius: 5%;
-  font-size: 300%;
-  
-
-}
-.circle-button {
-  height: 100%;
-  width: 100%;
-  background-color: steelblue;
-  border-radius: 100%;
-  text-align: center;
-  display: inline-block;
-}
-.home-navigation-box-tipbar {
-  width: 100%;
-  background-color: limegreen;
-  border-radius: 4%;
-}
+/*Header + Sisältö*/
 .top-header-container {
   height: auto;
   width: auto;
@@ -182,6 +22,11 @@ a:active {
   color: whitesmoke;
   bottom: 20%;
 }
+.top-header-space {
+  position:absolute;
+  top: 70%;
+  width: 100%;
+}
 .top-navigation {
   height: 120%;
   display: grid;
@@ -189,96 +34,9 @@ a:active {
   grid-template-rows: auto;
   column-gap: 2%;
   background-color: whitesmoke;
-  
-  
-}
-.Header{
-}
-.top-header-space {
-  position:absolute;
-  top: 70%;
-  width: 100%;
-}
-.square-button-number {
-  position: relative;
-  padding-left: 0%;
-  padding-right: 0%;
-  
-}
-.mid {
-  margin-top: 0;
-  background-color: whitesmoke;
-  padding: 10%;
-  padding-top: 0;
-}
-.mid-grid{
-  margin-top: 18%;
-  height:100%;
-  display: grid;
-  grid-template-columns: auto 50% auto;
-  gap: 1px;
-  grid: auto auto auto;
-}
-.question {
-  margin-bottom: 0;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333333;
-}
-textarea {
-  resize: none;
-}
-input[type=radio]{
-  border: 1px solid dimgrey;
-  -webkit-appearance: none;
-  padding-top:1px;
-  padding-bottom:1px;
-  padding-right:4px;
-  padding-left:4px;
-  border-radius:2px;
-}
-input[type=radio]:focus {
-  outline-color: transparent;
-}
-input[type=radio]:checked {
-  background-color:steelblue;
-}
-input[type=radio]:after {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 0.5em;
-  background-color: whitesmoke;
-  transform: scale(1);
-  transition: transform 0.2s ease-in-out;
-}
-input[type=checkbox]{
-  border: 1px solid dimgrey;
-  -webkit-appearance: none;
-  padding-top:1px;
-  padding-bottom:1px;
-  padding-right:4px;
-  padding-left:4px;
-  border-radius:2px;
-}
-input[type=checkbox]:focus {
-  outline-color: transparent;
-}
-input[type=checkbox]:checked {
-  background-color:steelblue;
-}
-input[type=checkbox]:after {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 0.5em;
-  background-color: whitesmoke;
-  transform: scale(1);
-  transition: transform 0.2s ease-in-out;
 }
 
+/*Navigation Buttonit*/
 .box-current{
   background-color: steelblue;
   border-radius: 5px;
@@ -295,10 +53,6 @@ input[type=checkbox]:after {
   padding-left:5px;
   padding-right:5px;
 }
-.smol2 {
-  color: whitesmoke;
-  margin-top: 0;
-}
 .hed{
   color: whitesmoke;
   margin-bottom: 0;
@@ -308,16 +62,112 @@ input[type=checkbox]:after {
   margin-top: 0;
   margin-bottom: 30%;
 }
+.smol2 {
+  color: whitesmoke;
+  margin-top: 0;
+}
 
+
+
+/*Content Container + Sisältö*/
+.mid-grid{
+  margin-top: 18%;
+  height:100%;
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  gap: 1px;
+  grid: auto auto auto;
+}
+.mid {
+  margin-top: 0;
+  background-color: whitesmoke;
+  padding: 10%;
+  padding-top: 0;
+}
+.question {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+textarea {
+  resize: none;
+}
+.bluetext{
+  font-size: larger;
+  color: steelblue;
+  font-weight: 600;
+}
+
+/*Radio Type*/
+input[type=radio]{
+  border: 1px solid dimgrey;
+  -webkit-appearance: none;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:4px;
+  padding-left:4px;
+  border-radius:2px;
+}
+input[type=radio]:checked {
+  background-color:steelblue;
+}
+input[type=radio]:after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: whitesmoke;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+
+/*Checkbox Type*/
+input[type=checkbox]{
+  border: 1px solid dimgrey;
+  -webkit-appearance: none;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:4px;
+  padding-left:4px;
+  border-radius:2px;
+}
+input[type=checkbox]:checked {
+  background-color:steelblue;
+}
+input[type=checkbox]:after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: whitesmoke;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+input[type=checkbox]:focus {
+  outline-color: transparent;
+}
+
+/*Dropdown*/
 .Dropdown{
   width: 100%;
   padding-bottom: 3px;
   padding-top: 3px;
   font-size: large;
 }
-
 .boxed{
   font-size: medium;
+}
+
+/*Arrow buttons*/
+.navigation-button-arrow-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .navigation-button-arrow-right {
   position: relative;
@@ -330,23 +180,6 @@ input[type=checkbox]:after {
   line-height:40px;
   float:right;
 }
-.navigation-button-arrow-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-/*.navigation-button-arrow-right:before {
-  content:"";
-  position: absolute;
-  right: 100%;
-  top:0px;
-  width:0px;
-  height:0px;
-  border-top:20px solid transparent;
-  border-right:40px solid steelblue;
-  border-bottom:20px solid transparent;
-}*/
-
 .navigation-button-arrow-right:after {
   content:"";
   position: absolute;
@@ -381,8 +214,180 @@ input[type=checkbox]:after {
   border-bottom:20px solid transparent;
 }
 
-.bluetext{
-  font-size: larger;
+
+
+/*Footer + Sisältö*/
+.footer {
+  padding: 1%;
+  background-color: #333333;
+}
+.logo-left {
+  margin-left: 0px;
+  border-left-width: 10%;
+  padding-left: 0px;
+  height: 50%;
+  width: 25%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.links-container {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  left: 25%;
+}
+.contact-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+.social-links-right {
+  margin-right: 0px;
+  border-right-width: 10%;
+  padding-right: 0px;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+  display: inline-grid;
+  column-gap: auto;
+  row-gap: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  position: relative;
+  top: -25%;
+}
+
+
+
+/*Basic Text Changes*/
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+
+/*Error screen picture*/
+.home-back-image-nopage {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/teamwork.jpg");
+  position: fixed;
+  filter: grayscale(100%);
+}
+.Content {
+  flex: 1 0 auto;
+}
+
+
+
+/*Un-used Cobtainers*/
+.home-navigation-box {
+  height: 50%;
+  width: 75%;
+  background-color: gray;
+  border-radius: 4%;
+  float: left;
+}
+.home-navigation-box-header {
   color: steelblue;
-  font-weight: 600;
+}
+.home-navigation-box-tipbar {
+  width: 100%;
+  background-color: limegreen;
+  border-radius: 4%;
+}
+.home-navigation-box-navigation {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 4%;
+}
+
+
+
+/*Un-used Buttons*/
+.square-button {
+  height: 50%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 5%;
+  font-size: 300%;
+}
+.square-button-number {
+  position: relative;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.circle-button {
+  height: 100%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
 }

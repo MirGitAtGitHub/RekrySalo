@@ -1,17 +1,8 @@
-
 html{
   background-image: url("./images/teamwork.jpg");
   background-attachment: fixed;
 }
 
-.uushtml{
-  margin-top: 0;
-  background-image: url("./images/teamwork.jpg");
-  background-attachment: absolute;
-  filter:grayscale(100%);
-  left: 0;
-  right: 0;
-}
 
 
 /*Header + Sisältö*/
@@ -31,11 +22,6 @@ html{
   color: whitesmoke;
   bottom: 20%;
 }
-.top-header-space {
-  position:absolute;
-  top: 70%;
-  width: 100%;
-}
 .top-navigation {
   height: 120%;
   display: grid;
@@ -44,8 +30,11 @@ html{
   column-gap: 2%;
   background-color: whitesmoke;
 }
-
-/*Navigation Buttonit*/
+.top-header-space {
+  position:absolute;
+  top: 70%;
+  width: 100%;
+}
 .box-current{
   background-color: steelblue;
   border-radius: 5px;
@@ -62,6 +51,10 @@ html{
   padding-left:5px;
   padding-right:5px;
 }
+.smol2 {
+  color: whitesmoke;
+  margin-top: 0;
+}
 .hed{
   color: whitesmoke;
   margin-bottom: 0;
@@ -71,14 +64,32 @@ html{
   margin-top: 0;
   margin-bottom: 30%;
 }
-.smol2 {
-  color: whitesmoke;
-  margin-top: 0;
+
+
+.square-button {
+  height: 50%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 5%;
+  font-size: 300%;
+}
+.circle-button {
+  height: 100%;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.home-navigation-box-tipbar {
+  width: 100%;
+  background-color: limegreen;
+  border-radius: 4%;
 }
 
 
 
-/*Content Container + Sisältö*/
+/*Mid/Content + Sisältö*/
 .mid-grid{
   margin-top: 18%;
   height:100%;
@@ -173,11 +184,7 @@ input[type=checkbox]:focus {
   font-size: medium;
 }
 
-/*Arrow buttons*/
-.navigation-button-arrow-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+/*Arrow Buttons*/
 .navigation-button-arrow-right {
   position: relative;
   width:200px;
@@ -188,6 +195,10 @@ input[type=checkbox]:focus {
   text-align:center;
   line-height:40px;
   float:right;
+}
+.navigation-button-arrow-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .navigation-button-arrow-right:after {
   content:"";
@@ -340,64 +351,15 @@ a:active {
 
 
 
-
 /*Error screen picture*/
-.home-back-image-nopage {
-  height: 100%;
-  width: 100%;
+.uushtml{
+  margin-top: 0;
   background-image: url("./images/teamwork.jpg");
-  position: fixed;
-  filter: grayscale(100%);
+  background-attachment: absolute;
+  filter:grayscale(100%);
+  left: 0;
+  right: 0;
 }
 .Content {
   flex: 1 0 auto;
-}
-
-
-
-/*Un-used Cobtainers*/
-.home-navigation-box {
-  height: 50%;
-  width: 75%;
-  background-color: gray;
-  border-radius: 4%;
-  float: left;
-}
-.home-navigation-box-header {
-  color: steelblue;
-}
-.home-navigation-box-tipbar {
-  width: 100%;
-  background-color: limegreen;
-  border-radius: 4%;
-}
-.home-navigation-box-navigation {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto;
-  column-gap: 4%;
-}
-
-
-
-/*Un-used Buttons*/
-.square-button {
-  height: 50%;
-  width: 100%;
-  background-color: steelblue;
-  border-radius: 5%;
-  font-size: 300%;
-}
-.square-button-number {
-  position: relative;
-  padding-left: 0%;
-  padding-right: 0%;
-}
-.circle-button {
-  height: 100%;
-  width: 100%;
-  background-color: steelblue;
-  border-radius: 100%;
-  text-align: center;
-  display: inline-block;
 }

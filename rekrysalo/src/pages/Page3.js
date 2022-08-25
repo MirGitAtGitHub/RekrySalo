@@ -8,6 +8,9 @@ const Page3 = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   localStorage.setItem("pagenumber","3");
+  if(localStorage.getItem("pagenumber") != null){
+    console.log("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Kyllä. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Ei.");
+  }
   return (
     <html>
       <body className="Body">

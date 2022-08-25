@@ -8,11 +8,13 @@ import Page5 from "./pages/Page5";
 import NoPage from "./pages/NoPage";
 import TestPage from './pages/TestPage';
 //import Home from './pages/Home';
+//import Check from './pages/Check';
+
 function App(props) {
   return (
     <BrowserRouter>
       <Routes>
-          <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : "" || (props.pagenumber===null) ? <Page1 /> : "" || (props.pagenumber==="3") ? <Page3 /> : "" || (props.pagenumber==="4") ? <Page4 /> : ""} />
+          <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : "" || (props.pagenumber===null) ? <Page1 /> : "" || (props.pagenumber==="3") ? <Page3 /> : "" || (props.pagenumber==="4") ? <Page4 /> : "" || (props.pagenumber==="5") ? <Page5 /> : ""} />
           <Route path={"/Page5"} element={<Page5 />} />
           <Route path={"/Page4"} element={<Page4 />} />
           <Route path={"/Page3"} element={<Page3 />} />

@@ -1,7 +1,7 @@
 import logo from "../images/Yrityssalo_logo.png";
 export const Footer = () => {
   return (
-          <footer className="footer">
+          <footer>
             <div className="logo-left">
                   <img src={logo} alt="logo" className="logo" />
             </div>

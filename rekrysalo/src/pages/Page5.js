@@ -22,11 +22,11 @@ const Page5 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question">Työsopimus voi olla kirjallinen, suullinen tai sähköinen.<strong>On suositeltavaa tehdä kirjallisesti, </strong>jotta sovitut asiat voidaan tarvittaessa tarkistaa.</p>
-            <p className="question">Ota tehdessä huomioon <strong>työsopimuslain, työaikalain ja vuosilomalain säännökset, sekä työehtosopimuksen määräykset.</strong></p>
-            <p className="question">Mikäli allekirjoitetussa sopimuksessa on sovittu edellämainittujen vastaisia asioita, ne <strong> eivät </strong>ole päteviä.</p>
-            <p className="question"><strong>Työsopimuksen kesto on sovittava.</strong> Se voi olla toistaiseksi voimassa oleva tai määräaikainen.</p>
-            <p className="question-subtext"><strong>Palkattavan henkilön ollessa 14-vuotias, sopimuksen<br></br> tekee huoltaja. Sitä nuorempi saa työskennellä vain<br></br> työsuojeluviranomaisen poikkeusluvalla.</strong></p>
+            <p className="question" style={{"margin-bottom":"30px"}}>Työsopimus voi olla kirjallinen, suullinen tai sähköinen.<strong>On suositeltavaa tehdä kirjallisesti, </strong>jotta sovitut asiat voidaan tarvittaessa tarkistaa.</p>
+            <p className="question" style={{"margin-bottom":"30px"}}>Ota tehdessä huomioon <strong>työsopimuslain, työaikalain ja vuosilomalain säännökset, sekä työehtosopimuksen määräykset.</strong></p>
+            <p className="question" style={{"margin-bottom":"30px"}}>Mikäli allekirjoitetussa sopimuksessa on sovittu edellämainittujen vastaisia asioita, ne <strong> eivät </strong>ole päteviä.</p>
+            <p className="question" style={{"margin-bottom":"30px"}}><strong>Työsopimuksen kesto on sovittava.</strong> Se voi olla toistaiseksi voimassa oleva tai määräaikainen.</p>
+            <p className="question-subtext" style={{"margin-bottom":"30px"}}><strong>Palkattavan henkilön ollessa 14-vuotias, sopimuksen<br></br> tekee huoltaja. Sitä nuorempi saa työskennellä vain<br></br> työsuojeluviranomaisen poikkeusluvalla.</strong></p>
             
             
 

@@ -22,46 +22,21 @@ const Page2 = () => {
           <div></div>
 
           <div className="mid">
+
             <p className="question">Yrityksen sijainti:</p>
             <textarea className="answer" rows="1" cols="70" id="answer1"></textarea>
-
-
-            <div>
-              <input type={"radio"} id="r1" name="Valinta" value="E"></input>
-              <label for="r1">Etätyö tai monta sijaintia</label>
-              <input type={"radio"} id="r2" name="Valinta" value="F"></input>
-              <label for="r2">Työpaikalla on eri sijainti kuin yrityksellä</label>
 
             <div style={{"margin-bottom":"40px"}}>
               <input type={"radio"} id="1" name="Valinta" value="E"></input>
               <label for="1">Etätyö tai monta sijaintia</label>
               <input type={"radio"} id="2" name="Valinta" value="F"></input>
               <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
-
             </div>
 
 
             <p className="question">Yrityksen kuvaus:</p>
 
-            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}} id="answer2"></textarea>
-
-            <p className="question">Työsopimuksen tyyppi</p>
-            <select className="Dropdown" name="valinta" id="Työ1">
-              <option className="boxed" id="Työ1o1">Määräaikainen</option>
-              <option className="boxed" id="Työ1o2">Toistaiseksi voimassaolo</option>
-              <option className="boxed" id="Työ1o3">Harjoittelija</option>
-            </select>
-
-            <p className="question">Työaika:</p>
-            <select className="Dropdown" name="valinta" id="Työ2">
-              <option className="boxed" id="Työ2o1">Kokoaikainen</option>
-              <option className="boxed" id="Työ2o2">Osa-aikainen</option>
-            </select>
-            
-            <p className="question">Tehtävänimike:</p>
-            <textarea className="answer" rows="1" cols="70" id="answer3"></textarea>
-
-            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"40px"}}></textarea>
+            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"40px"}} id="answer2"></textarea>
 
             <p className="question">Työsopimuksen tyyppi</p>
             <select className="Dropdown" name="valinta" id="Työ" style={{"margin-bottom":"10px"}}>
@@ -104,11 +79,8 @@ const Page2 = () => {
             </div>
 
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
-            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}} id="answer8"></textarea>
-
-              <input type="date" id="julkaisuaika" name="julkaisuaika" style={{"margin-right":"40px"}}></input>
-              <input type="date" id="julkaisuaika" name="to_julkaisuaika"></input>
-            </div>
+            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"40px"}} id="answer8"></textarea>
+            
 
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
             <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"50px"}}> </textarea>
@@ -116,7 +88,7 @@ const Page2 = () => {
 
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
-
+          
           </div>
           <div></div>
         </div>

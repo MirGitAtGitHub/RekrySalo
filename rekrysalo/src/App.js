@@ -6,6 +6,7 @@ import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 import Page5 from "./pages/Page5";
+import Page6 from './pages/Page6';
 import NoPage from "./pages/NoPage";
 import TestPage from './pages/TestPage';
 
@@ -18,6 +19,7 @@ function App(props) {
     <BrowserRouter>
       <Routes>
           <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : "" || (props.pagenumber===null) ? <Page1 /> : "" || (props.pagenumber==="3") ? <Page3 /> : "" || (props.pagenumber==="4") ? <Page4 /> : "" || (props.pagenumber==="5") ? <Page5 /> : ""} />
+          <Route path={"/Page6"} element={<Page6 />} />
           <Route path={"/Page5"} element={<Page5 />} />
           <Route path={"/Page4"} element={<Page4 />} />
           <Route path={"/Page3"} element={<Page3 />} />

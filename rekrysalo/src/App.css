@@ -455,16 +455,16 @@ p{
   
 }
 .home-box{
-    background-color: steelblue;
-    border-radius: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left:5px;
-    padding-right:5px;
-    max-width: 80px;
-    min-width: 40px;
-    max-height: 80px;
-    min-height: 40px;
+  background-color: steelblue;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left:5px;
+  padding-right:5px;
+  max-width: 80px;
+  min-width: 40px;
+  max-height: 80px;
+  min-height: 40px;
 }
 .home-hed{
   color: whitesmoke;

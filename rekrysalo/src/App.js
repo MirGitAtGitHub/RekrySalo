@@ -9,7 +9,6 @@ import Page5 from "./pages/Page5";
 import NoPage from "./pages/NoPage";
 import TestPage from './pages/TestPage';
 
-//import Home from './pages/Home';
 //import Check from './pages/Check';
 
 

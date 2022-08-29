@@ -68,8 +68,6 @@ const Page2 = () => {
 
             <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}} id="answer7"></textarea>
 
-            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"40px"}}></textarea>
-
 
             <div style={{"margin-bottom":"40px"}}>
               <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
@@ -77,10 +75,6 @@ const Page2 = () => {
               <input type="date" id="julkaisuaika1" name="julkaisuaika" style={{"margin-right":"20px"}}></input>
               <input type="date" id="julkaisuaika2" name="to_julkaisuaika"></input>
             </div>
-
-            <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
-            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"40px"}} id="answer8"></textarea>
-            
 
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
             <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"50px"}}> </textarea>

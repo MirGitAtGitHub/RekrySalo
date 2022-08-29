@@ -12,6 +12,7 @@ export const TopFooter = (props) => {
                 <div className="home-icon">
                 </div>
               </Link>
+              
               <div className={(props.current === "1") ? "box-current" : "box"}>
                 <Link to="/Page1">
                   <h1 className="hed">1</h1>

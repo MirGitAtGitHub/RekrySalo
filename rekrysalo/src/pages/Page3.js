@@ -23,7 +23,7 @@ const Page3 = () => {
 
           <div className="mid">
             <p className="question">Mieti milloin olet tavoitettavissa:</p>
-            <textarea className="answer" rows="1" cols="70"></textarea>
+            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"10px"}}></textarea>
 
             <p className="question">Milloin vastaat hakijoille:</p>
             <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"50px"}}></textarea>

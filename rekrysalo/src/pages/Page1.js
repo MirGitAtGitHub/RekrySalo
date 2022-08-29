@@ -23,6 +23,7 @@ const Page1 = () => {
 
           <div className="mid">
             <p className="question">Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
+
             <textarea className="answer" rows="10" cols="70" id="answer1"></textarea>
 
             <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
@@ -35,24 +36,47 @@ const Page1 = () => {
               <label for="r2">Esimerkki B</label>
               <input type={"radio"} id="r3" name="Valinta" value="C"></input>
               <label for="r3">Esimerkki C</label>
+
+            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"40px"}}></textarea>
+
+            <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
+            <textarea className="answer" rows="10" cols="70" ></textarea>
+
+            <div style={{"margin-bottom":"40px"}}>
+              <input type={"radio"} id="1" name="Valinta" value="A"></input>
+              <label for="1">Esimerkki A</label>
+              <input type={"radio"} id="2" name="Valinta" value="B"></input>
+              <label for="2">Esimerkki B</label>
+              <input type={"radio"} id="3" name="Valinta" value="C"></input>
+              <label for="3">Esimerkki C</label>
+
             </div>
 
             <p className="question">Aikatauluta rekrytointisi:</p>
             <textarea className="answer" rows="10" cols="70" id="answer3"></textarea>
-            
+
             <div>
               <input type={"checkbox"} id="cb1" name="Esimerkki" value="Esimerkki"></input>
               <label for="cb1">Esimerkki</label>
             </div>
 
             <p className="question">Arvioi budjetti rekrytoinnille:</p>
-            <textarea className="answer" rows="10" cols="70" id="answer4">
+            <textarea className="answer" rows="10" cols="70" id="answer4"></textarea>
+
+            <div style={{"margin-bottom":"40px"}}>
+              <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki"></input>
+              <label for="1">Esimerkki</label>
+            </div>
+
+            <p className="question">Arvioi budjetti rekrytoinnille:</p>
+            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}>
 
             </textarea>
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
           </div>
           <div></div>
+          </div>
         </div>
         <div className="footer">
           <Footer />

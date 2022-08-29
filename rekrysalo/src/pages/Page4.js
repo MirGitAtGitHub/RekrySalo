@@ -23,7 +23,7 @@ const Page4 = () => {
 
           <div className="mid">
             <p className="question">Haastattelutyyppi:</p>
-            <select className="Dropdown" name="valinta" id="Työ">
+            <select className="Dropdown" name="valinta" id="Työ" style={{"margin-bottom":"40px"}}>
               <option className="boxed">Ryhmähaastattelu</option>
               <option className="boxed">Etähaastattelu</option>
             </select>

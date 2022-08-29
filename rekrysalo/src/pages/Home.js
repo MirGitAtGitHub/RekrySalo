@@ -1,6 +1,5 @@
 //import {HomeBackImage} from "../modules/HomeBackImage";
 import {Footer} from "../modules/Footer";
-import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
 import {useEffect} from 'react';
 const Home = () => {

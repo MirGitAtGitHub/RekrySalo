@@ -132,16 +132,23 @@ html{
 .mid-grid{
   margin-top: 18%;
   height:100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: auto 50% auto;
+  grid-template-columns: minmax(auto,25%) minmax(50%,50%) minmax(auto,25%);
   gap: 1px;
-  grid: auto auto auto;
+  grid: auto 50% auto;
 }
 .mid {
   margin-top: 0;
   background-color: whitesmoke;
   padding: 10%;
   padding-top: 5%;
+  max-width: 100%;
+  min-width: 80%;
+}
+.empty-mid{
+  max-width: 25%;
+  min-width: auto;
 }
 .question {
   margin-bottom: 0;
@@ -157,6 +164,7 @@ html{
 }
 textarea {
   resize: none;
+  width: 100%;
 }
 .bluetext{
   font-size: larger;

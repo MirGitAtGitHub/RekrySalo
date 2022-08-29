@@ -12,55 +12,82 @@ const Page1 = () => {
     console.log("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Kyllä. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Ei.");
   }
   return (
-    <html>
-      <body className="Body">
-        <div className="Header">
-          <TopFooter text="OSAAMISEN TARVE" current="1" />
-        </div>
+  <html>
+    <body className="Body">
+      <div className="Header">
+        <TopFooter text="OSAAMISEN TARVE" current="1" />
+      </div>
+      
+      <div className="mid-grid">
+        <div className="empty-div"></div>
+        <div className="mid">
+          <div>
+            <div className="circle" style={{"margin-left":"-11%"}}>
+              <p className="circle-text">!</p>
+            </div>
+            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
+          </div>
+          <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}}></textarea>
+
+          <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
+          <textarea className="answer" rows="10" cols="70" id="answer2" ></textarea>
+
+          <div style={{"margin-bottom":"40px", "display": "inline-block"}}>
+            <input type={"radio"} id="r1" name="Valinta" value="A"></input>
+            <label for="r1">Esimerkki A</label>
+            <input type={"radio"} id="r2" name="Valinta" value="B"></input>
+            <label for="r2">Esimerkki B</label>
+            <input type={"radio"} id="r3" name="Valinta" value="C"></input>
+            <label for="r3">Esimerkki C</label>
+          </div>
+
+          <div>
+            <div className="circle" style={{"margin-left":"-11%"}}>
+              <p className="circle-text">!</p>
+            </div>
+            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Aikatauluta rekrytointisi:</p>
+          </div>
+
+          <textarea className="answer" rows="10" cols="70" id="answer3"></textarea>
+
+          <div style={{"margin-bottom":"40px"}}>
+            <input type={"checkbox"} id="cb1" name="Esimerkki" value="Esimerkki"></input>
+            <label for="cb1" >Esimerkki</label>
+          </div>
+
+          <div>
+            <div className="circle" style={{"margin-left":"-11%"}}>
+              <p className="circle-text">!</p>
+            </div>
+            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Arvioi budjetti rekrytoinnille:</p>
+          </div>
+          
+          <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}></textarea>
+          
+
+          <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
+          <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
         
-        <div className="mid-grid">
-          <div></div>
-
-          <div className="mid">
-            <p className="question">Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
-
-            <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}}></textarea>
-
-            <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
-            <textarea className="answer" rows="10" cols="70" id="answer2" ></textarea>
-
-            <div style={{"margin-bottom":"40px"}}>
-              <input type={"radio"} id="r1" name="Valinta" value="A"></input>
-              <label for="r1">Esimerkki A</label>
-              <input type={"radio"} id="r2" name="Valinta" value="B"></input>
-              <label for="r2">Esimerkki B</label>
-              <input type={"radio"} id="r3" name="Valinta" value="C"></input>
-              <label for="r3">Esimerkki C</label>
+          <br></br>
+          <div className="green-box" style={{"margin-top":"50px"}}>
+            <div className="circle">
+              <p className="circle-text">!</p>
             </div>
-
-            <p className="question">Aikatauluta rekrytointisi:</p>
-            <textarea className="answer" rows="10" cols="70" id="answer3"></textarea>
-
-            <div style={{"margin-bottom":"50px"}}>
-              <input type={"checkbox"} id="cb1" name="Esimerkki" value="Esimerkki"></input>
-              <label for="cb1" >Esimerkki</label>
+            <div className="circle">
+              <p className="circle-text">?</p>
             </div>
-
-
-            <p className="question">Arvioi budjetti rekrytoinnille:</p>
-            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}></textarea>
-
-            <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
-            <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
+            <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
           </div>
-          <div></div>
-          </div>
-        <div className="footer">
-          <Footer />
+
         </div>
-      </body>
+        <div className="empty-div"></div>
+      </div>
 
-    </html>
+      <div className="footer">
+        <Footer />
+      </div>
+    </body>
+  </html>
   )
 }
 

@@ -27,10 +27,10 @@ const Page1 = () => {
             </div>
             <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
           </div>
-          <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}}></textarea>
+          <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p1a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p1a1")}></textarea>
 
           <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
-          <textarea className="answer" rows="10" cols="70" id="answer2" ></textarea>
+          <textarea className="answer" rows="10" cols="70" id="answer2" onChange={() => localStorage.setItem("p1a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p1a2")}></textarea>
 
           <div style={{"margin-bottom":"40px", "display": "inline-block"}}>
             <input type={"radio"} id="r1" name="Valinta" value="A"></input>
@@ -48,7 +48,7 @@ const Page1 = () => {
             <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Aikatauluta rekrytointisi:</p>
           </div>
 
-          <textarea className="answer" rows="10" cols="70" id="answer3"></textarea>
+          <textarea className="answer" rows="10" cols="70" id="answer3" onChange={() => localStorage.setItem("p1a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p1a3")}></textarea>
 
           <div style={{"margin-bottom":"40px"}}>
             <input type={"checkbox"} id="cb1" name="Esimerkki" value="Esimerkki"></input>
@@ -62,7 +62,7 @@ const Page1 = () => {
             <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Arvioi budjetti rekrytoinnille:</p>
           </div>
           
-          <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}></textarea>
+          <textarea className="answer" rows="10" cols="70" id="answer4" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p1a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p1a4")}></textarea>
           
 
           <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>

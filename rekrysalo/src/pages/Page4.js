@@ -23,13 +23,13 @@ const Page4 = () => {
 
           <div className="mid">
             <p className="question">Haastattelutyyppi:</p>
-            <select className="Dropdown" name="valinta" id="Työ" style={{"margin-bottom":"40px"}}>
+            <select className="Dropdown" name="valinta" id="Työ1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p4s1",document.getElementById("Työ1").value)} defaultValue={localStorage.getItem("p4s1")}>
               <option className="boxed">Ryhmähaastattelu</option>
               <option className="boxed">Etähaastattelu</option>
             </select>
 
             <p className="question">Suunnittele haastattelurunko:</p>
-            <textarea className="answer" rows="10" cols="70"></textarea>
+            <textarea className="answer" rows="10" cols="70" id="answer1" onChange={() => localStorage.setItem("p4a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p4a1")}></textarea>
 
             <div>
               <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki" style={{"margin-bottom":"50px"}}></input>

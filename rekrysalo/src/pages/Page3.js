@@ -23,18 +23,18 @@ const Page3 = () => {
 
           <div className="mid">
             <p className="question">Mieti milloin olet tavoitettavissa:</p>
-            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"10px"}}></textarea>
+            <textarea className="answer" rows="1" cols="70" id="answer1" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p3a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p3a1")}></textarea>
 
             <p className="question">Milloin vastaat hakijoille:</p>
-            <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"50px"}}></textarea>
+            <textarea className="answer" rows="1" cols="70" id="answer2" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p3a2")}></textarea>
 
             <p className="bluetext">Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
             <p className="question">Luonnostele kutsu haastatteluun:</p>
-            <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}}></textarea>
+            <textarea className="answer" rows="10" cols="70" id="answer3" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p3a3")}></textarea>
 
             <p className="question">Luonnostele vastaus hylätyille hakemuksille:</p>
-            <textarea className="answer" rows="10" cols="70"></textarea>
+            <textarea className="answer" rows="10" cols="70" id="answer4" onChange={() => localStorage.setItem("p3a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p3a4")}></textarea>
 
             <div>
               <input type={"radio"} id="1" name="Valinta" value="A"></input>

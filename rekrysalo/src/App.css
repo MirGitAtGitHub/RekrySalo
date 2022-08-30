@@ -226,7 +226,7 @@ input[type=checkbox]:focus {
 
 /*Dropdown*/
 .Dropdown{
-  width: 98%;
+  width: 101%;
   padding-bottom: 3px;
   padding-top: 3px;
   font-size: large;

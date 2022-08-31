@@ -79,6 +79,50 @@ const Page2 = () => {
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
             <textarea className="answer" rows="1" cols="70" id="answer8" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p2a8",document.getElementById("answer8").value)} defaultValue={localStorage.getItem("p2a8")}> </textarea>
 
+            <p className="question">Muutaman yleisimmän työnhakusivuston <br></br> vaatimukset lähettävän kuvan ja videon suhteen.</p>
+
+            <div className="page2-grid">
+              <div></div>
+              <div className="page2-grid-item">
+                <h1 className="p2-h">Oikotie</h1>
+                <p className="sub-header">Kuva</p>
+                <div className="sub-grid">
+                  <p className="sub-grid-item">Mitat <br></br> 810 x <br></br> 540px</p>
+                  <p className="sub-grid-item">Koko <br></br> 2Mt</p>
+                  <p className="sub-grid-item">Muoto <br></br> .png / .jpg</p>
+                </div>
+                <p className="sub-header">Logo</p>
+                <div className="sub-grid">
+                  <p className="sub-grid-item">Mitat <br></br> 320 x <br></br> 160px</p>
+                  <p className="sub-grid-item">Koko <br></br> 2Mt</p>
+                  <p className="sub-grid-item">Muoto <br></br> .png / .jpg</p>
+                </div>
+                <p className="sub-header">Video</p>
+                <p className="sub">Muoto</p>
+                <p className="sub">Linkkinä:</p>
+                <p className="sub" style={{"padding-bottom": "3%"}}>Youtube tai Vimeo</p>
+              </div>
+
+              <div className="page2-grid-item">
+                <h1 className="p2-h">Duunitori</h1>
+                <p className="sub-header">Kuva</p>
+                <div className="sub-grid2">
+                  <p className="sub-grid-item">Mitat <br></br> min <br></br> 1200 x 630px</p>
+                  <p className="sub-grid-item">Koko <br></br> 2Mt</p>
+                  <p className="sub-grid-item">Muoto <br></br> .png / .jpg</p>
+                </div>
+                <p className="sub-header">Logo</p>
+                <div className="sub-grid">
+                  <p className="sub-grid-item">Mitat <br></br> 320 x <br></br> 160px</p>
+                  <p className="sub-grid-item">Koko <br></br> max 20Mt</p>
+                  <p className="sub-grid-item">Muoto <br></br> .png </p>
+                </div>
+                <p className="sub-header">Video</p>
+                <p className="sub">Muoto</p>
+                <p className="sub" style={{"padding-bottom": "13%"}}>Linkkinä:</p>
+              </div>
+              <div></div>
+            </div>
 
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>

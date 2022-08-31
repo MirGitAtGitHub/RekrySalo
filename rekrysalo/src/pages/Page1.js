@@ -41,12 +41,10 @@ const Page1 = () => {
             <label for="r3">Esimerkki C</label>
           </div>
 
-          <div>
-            <div className="circle" style={{"margin-left":"-11%"}}>
-              <p className="circle-text">!</p>
-            </div>
-            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Aseta rekrytoinnin ajankohta:</p>
-          </div>
+          
+            
+          <p className="question">Aseta rekrytoinnin ajankohta:</p>
+          
           <input type="datetime-local" id="rekryaika1" name="rekryaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p1d1",document.getElementById("rekryaika1").value)} defaultValue={localStorage.getItem("p1d1")}></input>
               <input type="datetime-local" id="rekryaika2" name="to_rekryaika" onChange={() => localStorage.setItem("p1d2",document.getElementById("rekryaika2").value)} defaultValue={localStorage.getItem("p1d2")}></input>
 

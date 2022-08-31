@@ -45,15 +45,10 @@ const Page1 = () => {
             <div className="circle" style={{"margin-left":"-11%"}}>
               <p className="circle-text">!</p>
             </div>
-            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Aikatauluta rekrytointisi:</p>
+            <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Aseta rekrytoinnin ajankohta:</p>
           </div>
-
-          <textarea className="answer" rows="10" cols="70" id="answer3" onChange={() => localStorage.setItem("p1a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p1a3")}></textarea>
-
-          <div style={{"margin-bottom":"40px"}}>
-            <input type={"checkbox"} id="cb1" name="Esimerkki" value="Esimerkki"></input>
-            <label for="cb1" >Esimerkki</label>
-          </div>
+          <input type="datetime-local" id="rekryaika1" name="rekryaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p1d1",document.getElementById("rekryaika1").value)} defaultValue={localStorage.getItem("p1d1")}></input>
+              <input type="datetime-local" id="rekryaika2" name="to_rekryaika" onChange={() => localStorage.setItem("p1d2",document.getElementById("rekryaika2").value)} defaultValue={localStorage.getItem("p1d2")}></input>
 
           <div>
             <div className="circle" style={{"margin-left":"-11%"}}>
@@ -76,7 +71,7 @@ const Page1 = () => {
             <div className="circle">
               <p className="circle-text">?</p>
             </div>
-            <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+            <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
           </div>
 
         </div>

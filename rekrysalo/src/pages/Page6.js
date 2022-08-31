@@ -22,14 +22,14 @@ const Page6 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question" style={{"margin-bottom":"60px"}}><strong>Perehdytys on sinulle erittäin hyödyllinen.
-                <br></br> Hyvä perehdytys varmistaa sujuvan työnaloituksen ja säästää aikaasi ja rahaasi.</strong></p>
-            <p className="question" style={{"margin-bottom":"50px"}}>perehdytykseen tulee kuulua ainakin:
-                <br></br>-Työvälineisiin, työympäristöön ja <br></br>sen toimintatapoihin tutustuminen.
-                <br></br>-Pelastusopastus
-                <br></br>-Työterveyshuolto
-                <br></br>-Työturvallisuus</p>
-            <p className="question" style={{"margin-bottom":"50px"}}><strong>Säästät vaivaa tulevaisuudessa, tekemällä perehdytyskansion jo ensimmäisen rekrytoinnin kohdalla.</strong></p>
+            <p className="question" style={{"margin-bottom":"60px"}}><strong>Perehdytys kannattaa aina.
+                <br></br> Selkeä perehdytys varmistaa sujuvan työnaloituksen, säästäen aikaasi ja rahaasi.</strong></p>
+            <p className="question" style={{"margin-bottom":"50px"}}>Perehdytykseen tulee kuulua ainakin seuraavat kohdat:
+                <br></br>-Työvälineisiin, työympäristöön ja <br></br>sen toimintatapoihin perehtyminen,
+                <br></br>-Pelastusopastuksen järjestäminen,
+                <br></br>-Työterveyshuollon kartoitus ja
+                <br></br>-Työturvallisuuden menetelmien läpikäynti.</p>
+            <p className="question" style={{"margin-bottom":"50px"}}><strong>Säästät vaivaa tulevaisuudessa laatimalla perehdytyskansion sisällön jo ensimmäisen rekrytoinnin aikana.</strong></p>
             
             
 
@@ -44,7 +44,7 @@ const Page6 = () => {
               <div className="circle">
                 <p className="circle-text">?</p>
               </div>
-              <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+              <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
             </div>
 
           </div>

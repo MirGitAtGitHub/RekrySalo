@@ -34,14 +34,14 @@ const Page2 = () => {
             </div>
 
 
-            <p className="question">Yrityksen kuvaus:</p>
+            <p className="question">Miten kuvailisit yrityksen toimintaa?</p>
 
             <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"40px"}} id="answer2" onChange={() => localStorage.setItem("p2a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p2a2")}></textarea>
 
-            <p className="question">Työsopimuksen tyyppi</p>
+            <p className="question">Työsopimuksen tyyppi:</p>
             <select className="Dropdown" name="valinta" id="Työ1" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p2s1",document.getElementById("Työ1").value)} defaultValue={localStorage.getItem("p2s1")}>
               <option className="boxed">Määräaikainen</option>
-              <option className="boxed">Toistaiseksi voimassaolo</option>
+              <option className="boxed">Toistaiseksi voimassa oleva</option>
               <option className="boxed">Harjoittelija</option>
             </select>
 
@@ -64,7 +64,7 @@ const Page2 = () => {
             <p className="question">Ilmoittajan puhelin:</p>
             <textarea className="answer" rows="1" cols="70" id="answer6" onChange={() => localStorage.setItem("p2a6",document.getElementById("answer6").value)} defaultValue={localStorage.getItem("p2a6")}></textarea>
 
-            <p className="question">Hakemusten vastaanotto sähköpostiosoite:</p>
+            <p className="question">Ilmoita sähköpostiosoite johon hakemukset vastaanotetaan:</p>
 
             <textarea className="answer" rows="1" cols="70" style={{"margin-bottom":"20px"}} id="answer7" onChange={() => localStorage.setItem("p2a7",document.getElementById("answer7").value)} defaultValue={localStorage.getItem("p2a7")}></textarea>
 
@@ -91,7 +91,7 @@ const Page2 = () => {
               <div className="circle">
                 <p className="circle-text">?</p>
               </div>
-              <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+              <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
             </div>
 
           </div>

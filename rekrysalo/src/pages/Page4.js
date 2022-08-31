@@ -22,7 +22,7 @@ const Page4 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question">Haastattelutyyppi:</p>
+            <p className="question">Miten työhön haastattelu toteutetaan?</p>
             <select className="Dropdown" name="valinta" id="Työ1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p4s1",document.getElementById("Työ1").value)} defaultValue={localStorage.getItem("p4s1")}>
               <option className="boxed">Ryhmähaastattelu</option>
               <option className="boxed">Etähaastattelu</option>
@@ -33,7 +33,7 @@ const Page4 = () => {
 
             <div>
               <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki" style={{"margin-bottom":"50px"}}></input>
-              <label for="1">Esimerkki kysymyksiä:</label>
+              <label for="1">Esimerkkikysymyksiä:</label>
             </div>
 
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
@@ -47,7 +47,7 @@ const Page4 = () => {
               <div className="circle">
                 <p className="circle-text">?</p>
               </div>
-              <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+              <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
             </div>
 
           </div>

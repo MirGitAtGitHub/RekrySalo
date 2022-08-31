@@ -22,18 +22,18 @@ const Page3 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question">Mieti milloin olet tavoitettavissa:</p>
+            <p className="question">Miten ja milloin olet tavoitettavissa hakemuksiin liittyen?</p>
             <textarea className="answer" rows="1" cols="70" id="answer1" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p3a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p3a1")}></textarea>
 
-            <p className="question">Milloin vastaat hakijoille:</p>
+            <p className="question">Aseta vastausaika hakemuksiin liittyviin kysymyksiin:</p>
             <textarea className="answer" rows="1" cols="70" id="answer2" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p3a2")}></textarea>
 
-            <p className="bluetext">Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
+            <p className="bluetext"><strong>Muista!</strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
             <p className="question">Luonnostele kutsu haastatteluun:</p>
             <textarea className="answer" rows="10" cols="70" id="answer3" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p3a3")}></textarea>
 
-            <p className="question">Luonnostele vastaus hylätyille hakemuksille:</p>
+            <p className="question">Miten hylättyihin hakemuksiin vastataan? Luo vastauspohja.</p>
             <textarea className="answer" rows="10" cols="70" id="answer4" onChange={() => localStorage.setItem("p3a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p3a4")}></textarea>
 
             <div>
@@ -54,7 +54,7 @@ const Page3 = () => {
               <div className="circle">
                 <p className="circle-text">?</p>
               </div>
-              <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+              <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
             </div>
 
           </div>

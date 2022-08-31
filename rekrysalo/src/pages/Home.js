@@ -15,7 +15,7 @@ const Home = () => {
 
           <div className="home-mid">
             <p className="home-otsikko">Pienyrittäjän rekryopas</p>
-            <p className="home-info">Tämä opas on suunnattu ensimmäistä työntekijäänsä rekrytavoille pien- ja mikroyrittäjälle.</p>
+            <p className="home-info">Tämä opas on suunnattu ensimmäistä työntekijäänsä rekrytoiville pien- ja mikroyrittäjille.</p>
 
             <p className="home-text">Täytä kohdat, jotka koet itsellesi hyödylliseksi.</p>
             <br></br>
@@ -72,7 +72,7 @@ const Home = () => {
               <div className="circle">
                 <p className="circle-text">?</p>
               </div>
-              <p className="green-info">Vinkki- ja ojhenappaimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
+              <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
             </div>
  
           </div>

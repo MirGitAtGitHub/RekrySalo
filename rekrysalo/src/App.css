@@ -251,6 +251,13 @@ input[type=radio]:focus {
   outline-color: transparent;
 }
 
+/*Number*/
+.number-input{
+  margin-bottom: 5%;
+  text-align: left;
+  font-size:medium;
+}
+
 /*Checkbox Type*/
 input[type=checkbox]{
   border: 1px solid dimgrey;

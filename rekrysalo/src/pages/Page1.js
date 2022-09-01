@@ -55,7 +55,11 @@ const Page1 = () => {
             <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Arvioi budjetti rekrytoinnille:</p>
           </div>
           
-          <textarea className="answer" rows="10" cols="70" id="answer4" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p1a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p1a4")}></textarea>
+          <input className="number-input" type="text" id="budjetti" name="budjetti"></input>
+          <p className="question" style={{"display": "inline-block"}}>€</p>
+          <div></div>
+          
+          
           
 
           <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>

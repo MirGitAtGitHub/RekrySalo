@@ -55,7 +55,14 @@ const Page1 = () => {
             <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Arvioi budjetti rekrytoinnille:</p>
           </div>
           
-          <input className="number-input" type="text" id="budjetti" name="budjetti"></input>
+          <input className="number-input" type="text" id="budjetti" name="budjetti" defaultValue={localStorage.getItem("p1n1")} onBlur={(e) => {var a = [];
+    var k = e.which;
+    
+    for (var i = 48; i < 58; i++)
+        a.push(i);
+    
+    if (!(a.indexOf(k)>=0))
+        e.preventDefault();if (parseInt(document.getElementById("budjetti").value) > 20000) {document.getElementById("budjetti").value = 20000;alert("Maksimibudjetti on 20 000 euroa.");localStorage.setItem("p1n1",document.getElementById("budjetti").value);} if (parseInt(document.getElementById("budjetti").value) < 2000) {document.getElementById("budjetti").value = 2000;alert("Minimibudjetti on 2000 euroa.");localStorage.setItem("p1n1",document.getElementById("budjetti").value)};if (parseInt(document.getElementById("budjetti").value) >= 2000 && parseInt(document.getElementById("budjetti").value) <= 20000) {document.getElementById("budjetti").value = document.getElementById("budjetti").value;localStorage.setItem("p1n1",document.getElementById("budjetti").value)}}}></input>
           <p className="question" style={{"display": "inline-block"}}>€</p>
           <div></div>
           

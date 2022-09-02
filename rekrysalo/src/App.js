@@ -9,8 +9,7 @@ import Page5 from "./pages/Page5";
 import Page6 from './pages/Page6';
 import NoPage from "./pages/NoPage";
 import TestPage from './pages/TestPage';
-
-//import Check from './pages/Check';
+import Check from './pages/Check';
 
 
 
@@ -28,6 +27,7 @@ function App(props) {
           <Route path={"*"} element={<NoPage />} />
           <Route path={"/TestPage"} element={<TestPage />} />
           <Route path={"/Home"} element={<Home />} />
+          <Route path={"/Check"} element={<Check />} />
 
       </Routes>
     </BrowserRouter>

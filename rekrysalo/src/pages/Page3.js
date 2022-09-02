@@ -28,7 +28,7 @@ const Page3 = () => {
             <p className="question">Aseta vastausaika hakemuksiin liittyviin kysymyksiin:</p>
             <textarea className="answer" rows="1" cols="70" id="answer2" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p3a2")}></textarea>
 
-            <p className="bluetext"><strong>Muista!</strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
+            <p className="bluetext"><strong>Muista! </strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
             <p className="question">Luonnostele kutsu haastatteluun:</p>
             <textarea className="answer" rows="10" cols="70" id="answer3" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p3a3")}></textarea>

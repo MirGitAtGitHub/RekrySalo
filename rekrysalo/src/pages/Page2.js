@@ -72,8 +72,8 @@ const Page2 = () => {
             <div style={{"margin-bottom":"40px"}}>
               <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
 
-              <input type="date" id="julkaisuaika1" name="julkaisuaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p2d1",document.getElementById("julkaisuaika1").value)} defaultValue={localStorage.getItem("p2d1")}></input>
-              <input type="date" id="julkaisuaika2" name="to_julkaisuaika" onChange={() => localStorage.setItem("p2d2",document.getElementById("julkaisuaika2").value)} defaultValue={localStorage.getItem("p2d2")}></input>
+              <input type="datetime-local" id="julkaisuaika1" name="julkaisuaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p2d1",document.getElementById("julkaisuaika1").value)} defaultValue={localStorage.getItem("p2d1")}></input>
+              <input type="datetime-local" id="julkaisuaika2" name="to_julkaisuaika" onChange={() => localStorage.setItem("p2d2",document.getElementById("julkaisuaika2").value)} defaultValue={localStorage.getItem("p2d2")}></input>
             </div>
 
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>

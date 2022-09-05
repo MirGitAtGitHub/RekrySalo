@@ -45,6 +45,7 @@ const Page2 = () => {
 
             <p className="question">Työsopimuksen tyyppi:</p>
             <select className="Dropdown" name="valinta" id="Työ1" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p2s1",document.getElementById("Työ1").value)} defaultValue={localStorage.getItem("p2s1")}>
+              <option className="boxed">Valitse...</option>
               <option className="boxed">Määräaikainen</option>
               <option className="boxed">Toistaiseksi voimassa oleva</option>
               <option className="boxed">Harjoittelija</option>
@@ -52,6 +53,7 @@ const Page2 = () => {
 
             <p className="question">Työaika:</p>
             <select className="Dropdown" name="valinta" id="Työ2" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p2s2",document.getElementById("Työ2").value)} defaultValue={localStorage.getItem("p2s2")}>
+              <option className="boxed">Valitse...</option>
               <option className="boxed">Kokoaikainen</option>
               <option className="boxed">Osa-aikainen</option>
             </select>

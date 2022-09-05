@@ -29,6 +29,7 @@ const Page4 = () => {
           <div className="mid">
             <p className="question">Miten työhön haastattelu toteutetaan?</p>
             <select className="Dropdown" name="valinta" id="Työ1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p4s1",document.getElementById("Työ1").value)} defaultValue={localStorage.getItem("p4s1")}>
+              <option className="boxed">Valitse...</option>
               <option className="boxed">Ryhmähaastattelu</option>
               <option className="boxed">Etähaastattelu</option>
             </select>

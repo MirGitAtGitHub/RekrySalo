@@ -10,10 +10,11 @@ const Page3 = () => {
   localStorage.setItem("pagenumber","3");
   sessionStorage.setItem("sessionongoing",(sessionStorage.getItem("sessionongoing") === null) ? "false" : "true");
   if(localStorage.length > 1 && sessionStorage.getItem("sessionongoing") === "false") {
-    if(window.confirm("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Kyllä. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Ei.")) {
+    if(window.confirm("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Ok. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Peru.")) {
       console.log("Palautetaan aiempi istunto...");
     } else {
       localStorage.clear();
+      sessionStorage.clear();
     }
   }
   return (

@@ -17,7 +17,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <Routes>
-          <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : "" || (props.pagenumber==="0") ? <Home /> : "" || (props.pagenumber===null) ? <Home /> : "" || (props.pagenumber==="3") ? <Page3 /> : "" || (props.pagenumber==="4") ? <Page4 /> : "" || (props.pagenumber==="5") ? <Page5 /> : "" || (props.pagenumber==="6") ? <Page6 /> : ""} />
+          <Route index element={(props.pagenumber==="1") ? <Page1 /> : "" || (props.pagenumber==="2") ? <Page2 /> : "" || (props.pagenumber==="0") ? <Home /> : "" || (props.pagenumber===null) ? <Home /> : "" || (props.pagenumber==="3") ? <Page3 /> : "" || (props.pagenumber==="4") ? <Page4 /> : ""} />
           <Route path={"/Page6"} element={<Page6 />} />
           <Route path={"/Page5"} element={<Page5 />} />
           <Route path={"/Page4"} element={<Page4 />} />

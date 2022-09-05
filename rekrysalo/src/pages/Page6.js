@@ -8,9 +8,6 @@ const Page6 = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   localStorage.setItem("pagenumber","6");
-  if(localStorage.getItem("pagenumber") != null){
-    console.log("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Kyllä. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Ei.");
-  }
   return (
     <html>
       <body className="Body">
@@ -34,7 +31,7 @@ const Page6 = () => {
             
 
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))-1)}><div class="navigation-button-arrow-left"><h2 class="navigation-button-arrow-text">EDELLINEN</h2></div></Link>
-            <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
+            <Link to="/Check"><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">VALMIS</h2></div></Link>
             
             <br></br>
             <div className="green-box" style={{"margin-top":"30px"}}>

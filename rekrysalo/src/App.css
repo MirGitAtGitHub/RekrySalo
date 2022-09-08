@@ -577,6 +577,21 @@ p{
 
 
 
+/*add-button*/
+.add-button{
+  padding: 1%;
+  background-color: steelblue;
+  text-align: center;
+  width: 25%;
+  border-radius: 5px;
+}
+.add-button-text{
+  font-size: large;
+  color: white;
+}
+
+
+
 /*Error screen picture*/
 .uushtml{
   margin-top: 0;

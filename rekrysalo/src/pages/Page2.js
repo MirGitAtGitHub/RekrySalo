@@ -29,6 +29,17 @@ const Page2 = () => {
 
           <div className="mid">
 
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Suosituimmat työpaikkojen hakukoneet:<br></br>
+              <p className="bluetext2" style={{"display":"inline-block", "margin-right": "40px"}}>TE-palvelut</p>
+              <p className="bluetext2" style={{"display":"inline-block", "margin-right": "40px"}}>Duunitori</p>
+              <p className="bluetext2" style={{"display":"inline-block", "margin-right": "40px", "margin-bottom":"40px"}}>Oikotie</p></p>
+            </div>
+
+            
             <p className="question">Yrityksen sijainti:</p>
             <textarea className="answer" rows="1" cols="70" id="answer1" onChange={() => localStorage.setItem("p2a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p2a1")}></textarea>
 
@@ -39,8 +50,13 @@ const Page2 = () => {
               <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
             </div>
 
-
-            <p className="question">Miten kuvailisit yrityksen toimintaa?</p>
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+                <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Miten kuvailisit yrityksen toimintaa?</p>
+            </div>
+            
 
             <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"40px"}} id="answer2" onChange={() => localStorage.setItem("p2a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p2a2")}></textarea>
 
@@ -59,11 +75,22 @@ const Page2 = () => {
               <option className="boxed">Osa-aikainen</option>
             </select>
             
-            <p className="question">Tehtävänimike:</p>
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+                <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Tehtävänimike:</p>
+            </div>
+            
             <textarea className="answer" rows="1" cols="70" id="answer3" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p2a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p2a3")}></textarea>
 
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+                <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Työn kuvaus:</p>
+            </div>
             
-            <p className="question">Työn kuvaus:</p>
             <textarea className="answer" rows="10" cols="70" style={{"margin-bottom":"50px"}} id="answer4" onChange={() => localStorage.setItem("p2a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p2a4")}></textarea>
 
             <p className="question">Ilmoittajan nimi:</p>
@@ -78,16 +105,29 @@ const Page2 = () => {
 
 
             <div style={{"margin-bottom":"40px"}}>
+              
               <label className="question">Ilmoituksen julkaisuaika:</label><br></br>
 
               <input type="datetime-local" id="julkaisuaika1" name="julkaisuaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p2d1",document.getElementById("julkaisuaika1").value)} defaultValue={localStorage.getItem("p2d1")}></input>
               <input type="datetime-local" id="julkaisuaika2" name="to_julkaisuaika" onChange={() => localStorage.setItem("p2d2",document.getElementById("julkaisuaika2").value)} defaultValue={localStorage.getItem("p2d2")}></input>
             </div>
 
-            <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+                <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Yhteyshenkilöt ja heidän yhteystietonsa:</p>
+            </div>
+           
             <textarea className="answer" rows="1" cols="70" id="answer8" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p2a8",document.getElementById("answer8").value)} defaultValue={localStorage.getItem("p2a8")}> </textarea>
 
-            <p className="question">Muutaman yleisimmän työnhakusivuston <br></br> vaatimukset lähettävän kuvan ja videon suhteen.</p>
+            <div>
+                <div className="circle" style={{"margin-left":"-11%"}}>
+                  <p className="circle-text">!</p>
+                </div>
+                <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Muutaman yleisimmän työnhakusivuston <br></br> vaatimukset lähettävän kuvan ja videon suhteen.</p>
+            </div>
+            
 
             <div className="page2-grid">
               <div></div>

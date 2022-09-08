@@ -28,15 +28,28 @@ const Page3 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question">Miten ja milloin olet tavoitettavissa hakemuksiin liittyen?</p>
+            
+            <div>
+              <div className="circle" style={{"margin-left":"-11%"}}>
+                <p className="circle-text">!</p>
+              </div>
+              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Miten ja milloin olet tavoitettavissa<br></br> hakemuksiin liittyen?</p>
+            </div>
             <textarea className="answer" rows="1" cols="70" id="answer1" style={{"margin-bottom":"10px"}} onChange={() => localStorage.setItem("p3a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p3a1")}></textarea>
 
-            <p className="question">Aseta vastausaika hakemuksiin liittyviin kysymyksiin:</p>
+            <p className="question" >Aseta vastausaika hakemuksiin liittyviin kysymyksiin:</p>
             <textarea className="answer" rows="1" cols="70" id="answer2" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p3a2")}></textarea>
 
             <p className="bluetext"><strong>Muista! </strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
-            <p className="question">Luonnostele kutsu haastatteluun:</p>
+            <div>
+              <div className="circle" style={{"margin-left":"-11%"}}>
+                <p className="circle-text">!</p>
+              </div>
+              
+              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Luonnostele kutsu haastatteluun:</p>
+            </div>
+            
             <textarea className="answer" rows="10" cols="70" id="answer3" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p3a3")}></textarea>
 
             <p className="question">Miten hylättyihin hakemuksiin vastataan? Luo vastauspohja.</p>

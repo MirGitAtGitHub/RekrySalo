@@ -19,7 +19,13 @@ const Page5 = () => {
           <div></div>
 
           <div className="mid">
-            <p className="question" style={{"margin-bottom":"30px"}}>Työsopimus voi olla kirjallinen, suullinen tai sähköinen.<strong>Työsopimuksen laatiminen kirjallisesti on suositeltavaa, </strong>jotta sovitut asiat voidaan tarvittaessa tarkistaa.</p>
+            <div>
+              <div className="circle" style={{"margin-left":"-11%"}}>
+                <p className="circle-text">!</p>
+              </div>
+              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Työsopimus voi olla kirjallinen, suullinen tai sähköinen.<strong>Työsopimuksen laatiminen kirjallisesti</strong></p><p className="question" style={{"margin-bottom":"30px"}}><strong> on suositeltavaa, </strong>jotta sovitut asiat voidaan tarvittaessa tarkistaa.</p>
+            </div>
+            
             <p className="question" style={{"margin-bottom":"30px"}}>Ota työsopimusta täytettäessä huomioon <strong>työsopimuslain, työaikalain ja vuosilomalain säännökset, sekä työehtosopimuksen määräykset.</strong></p>
             <p className="question" style={{"margin-bottom":"30px"}}>Mikäli allekirjoitetussa sopimuksessa on sovittu edellämainittujen vastaisia asioita, ne <strong> eivät </strong>ole päteviä.</p>
             <p className="question" style={{"margin-bottom":"30px"}}><strong>Työsopimuksen kesto on sovittava.</strong> Työsopimus voidaan laatia toistaiseksi voimassa olevaksi tai määräaikaiseksi.</p>

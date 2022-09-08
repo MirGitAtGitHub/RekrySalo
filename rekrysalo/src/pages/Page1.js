@@ -39,13 +39,10 @@ const Page1 = () => {
             <div className="mid">
     
               <div>
-    
                 <div className="circle" style={{"margin-left":"-11%"}}>
                   <p className="circle-text">!</p>
                 </div>
-    
                 <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
-    
               </div>
     
               <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p1a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p1a1")}></textarea>

@@ -171,6 +171,10 @@ textarea {
   color: steelblue;
   font-weight: 600;
 }
+.bluetext2{
+  color: steelblue;
+  font-weight: 600;
+}
 .page2-grid{
   display: grid;
   grid-template-columns: auto 40% 40% auto;

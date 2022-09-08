@@ -35,7 +35,13 @@ const Page4 = () => {
               <option className="boxed">Etähaastattelu</option>
             </select>
 
-            <p className="question">Suunnittele haastattelurunko:</p>
+            <div>
+              <div className="circle" style={{"margin-left":"-11%"}}>
+                <p className="circle-text">!</p>
+              </div>
+              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Suunnittele haastattelurunko:</p>
+            </div>
+            
             <textarea className="answer" rows="10" cols="70" id="answer1" onChange={() => localStorage.setItem("p4a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p4a1")}></textarea>
 
             <div>

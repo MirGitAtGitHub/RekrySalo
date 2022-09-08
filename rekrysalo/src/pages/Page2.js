@@ -43,12 +43,25 @@ const Page2 = () => {
             <p className="question">Yrityksen sijainti:</p>
             <textarea className="answer" rows="1" cols="70" id="answer1" onChange={() => localStorage.setItem("p2a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p2a1")}></textarea>
 
-            <div style={{"margin-bottom":"40px"}}>
-              <input type={"radio"} id="1" name="Valinta" value="E"></input>
+            <div style={{"margin-bottom":"40px"}} onChange={() => (document.getElementById("2").checked === true) ? (document.getElementById("tpsijaintip").style.display = "",document.getElementById("optionalanswer1").style.display = "") : (document.getElementById("tpsijaintip").style.display = "none",document.getElementById("optionalanswer1").style.display = "none",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : document.getElementById("ttvalinta").style.display = "none")}>
+              <input type={"checkbox"} id="1" name="Valinta" value="1"></input>
               <label for="1">Etätyö tai monta sijaintia</label>
-              <input type={"radio"} id="2" name="Valinta" value="F"></input>
+              <input type={"checkbox"} id="2" name="Valinta" value="2"></input>
               <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
             </div>
+
+            <div style={{"margin-bottom":"40px",display:"none"}} id="ttvalinta" onChange={() => (document.getElementById("4").checked === true) ? (document.getElementById("sijainti1").style.display = "",document.getElementById("lisaasijainti").style.display = "") : (document.getElementById("sijainti1").style.display = "none",document.getElementById("lisaasijainti").style.display = "none")}>
+              <input type={"checkbox"} id="3" name="Valinta" value="3"></input>
+              <label for="3">Etätyö</label>
+              <input type={"checkbox"} id="4" name="Valinta" value="4"></input>
+              <label for="4">Monta sijaintia</label>
+            </div>
+
+            <textarea className="answer" rows="1" cols="70" id="sijainti1" style={{display:"none"}} onChange={() => localStorage.setItem("p2sa1",document.getElementById("sijainti1").value)} defaultValue={localStorage.getItem("p2sa1")}></textarea>
+
+
+            <p className="question" id="tpsijaintip" style={{display:"none"}}>Työpaikan sijainti:</p>
+            <textarea className="answer" rows="1" cols="70" id="optionalanswer1" style={{display:"none"}} onChange={() => localStorage.setItem("p2oa1",document.getElementById("optionalanswer1").value)} defaultValue={localStorage.getItem("p2oa1")}></textarea>
 
             <div>
                 <div className="circle" style={{"margin-left":"-11%"}}>

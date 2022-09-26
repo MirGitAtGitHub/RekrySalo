@@ -56,12 +56,12 @@ const Page1 = () => {
     
               <textarea className="answer" rows="10" cols="70" id="answer2" onChange={() => localStorage.setItem("p1a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p1a2")}></textarea>
     
-              <div style={{"margin-bottom":"40px", "display": "inline-block"}}>
-                <input type={"radio"} id="r1" name="Valinta" value="A"></input>
+              <div id="p1rg1" style={{"margin-bottom":"40px", "display": "inline-block"}} onClick={() => (document.getElementById("r1").checked === true) ? localStorage.setItem("p1rg1","r1checked") : (document.getElementById("r2").checked === true) ? localStorage.setItem("p1rg1","r2checked") : (document.getElementById("r3").checked === true) ? localStorage.setItem("p1rg1","r3checked") : ""}>
+                <input type={"radio"} id="r1" name="Valinta" value="A" defaultChecked={(localStorage.getItem("p1rg1") === "r1checked") ? true : false}></input>
                 <label for="r1">Esimerkki A</label>
-                <input type={"radio"} id="r2" name="Valinta" value="B"></input>
+                <input type={"radio"} id="r2" name="Valinta" value="B" defaultChecked={(localStorage.getItem("p1rg1") === "r2checked") ? true : false}></input>
                 <label for="r2">Esimerkki B</label>
-                <input type={"radio"} id="r3" name="Valinta" value="C"></input>
+                <input type={"radio"} id="r3" name="Valinta" value="C" defaultChecked={(localStorage.getItem("p1rg1") === "r3checked") ? true : false}></input>
                 <label for="r3">Esimerkki C</label>
               </div>
               

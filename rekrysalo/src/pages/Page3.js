@@ -66,10 +66,10 @@ const Page3 = () => {
             </div>
             <textarea className="answer" rows="10" cols="70" id="answer4" onChange={() => localStorage.setItem("p3a4",document.getElementById("answer4").value)} defaultValue={localStorage.getItem("p3a4")}></textarea>
 
-            <div>
-              <input type={"radio"} id="1" name="Valinta" value="A"></input>
+            <div onClick={() => (document.getElementById("1").checked === true) ? localStorage.setItem("p3rg1","r1checked") : (document.getElementById("2").checked === true) ? localStorage.setItem("p3rg1","r2checked") : ""}>
+              <input type={"radio"} id="1" name="Valinta" value="A" defaultChecked={(localStorage.getItem("p3rg1") === "r1checked") ? true : false}></input>
               <label for="1">Esimerkki A</label>
-              <input type={"radio"} id="2" name="Valinta" value="B" style={{"margin-bottom":"50px"}}></input>
+              <input type={"radio"} id="2" name="Valinta" value="B" defaultChecked={(localStorage.getItem("p3rg1") === "r2checked") ? true : false} style={{"margin-bottom":"50px"}}></input>
               <label for="2" >Esimerkki B</label>
             </div>
 

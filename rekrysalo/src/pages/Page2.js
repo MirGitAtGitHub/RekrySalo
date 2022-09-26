@@ -7,7 +7,9 @@ const Page2 = () => {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
+  var itemscreate = (localStorage.getItem("itemscreate") !== 0) ? localStorage.getItem("itemscreate") : 0;
   localStorage.setItem("pagenumber","2");
+  sessionStorage.setItem("itemscreated",false);
   sessionStorage.setItem("sessionongoing",(sessionStorage.getItem("sessionongoing") === null) ? "false" : "true");
   if(localStorage.length > 1 && sessionStorage.getItem("sessionongoing") === "false") {
     if(window.confirm("Olet käynyt aiemmin tällä sivulla. Onko sinulla keskeneräinen lomake täytettävänä? Ei hätää. Voit palata lomakkeen pariin painamalla Ok. Jos haluat hylätä tehdyt muutokset ja aloittaa lomakkeen täytön alusta, paina Peru.")) {
@@ -15,6 +17,29 @@ const Page2 = () => {
     } else {
       localStorage.clear();
       sessionStorage.clear();
+    }
+  }
+  function createItems(itemscreate){
+    if(itemscreate > 0){
+      for (let ic = 0; ic < itemscreate; ic++) {
+        var sijainti = document.createElement("textarea");
+        sijainti.setAttribute("className","answer");
+        sijainti.setAttribute("rows","1");
+        sijainti.setAttribute("cols","70");
+        sijainti.setAttribute("id","sijainti" + ic.toString());
+        sijainti.addEventListener("change",() => localStorage.setItem("p2sa" + ic.toString(),document.getElementById("sijainti" + ic.toString()).value));
+        sijainti.textContent = localStorage.getItem("p2sa" + ic.toString());
+        var sijaintikenttä = document.getElementById("lisaasijainti");
+        sijaintikenttä.before(sijainti);
+      }
+    }
+  }
+  function destroyItems(itemscreate){
+    if(itemscreate > 0){
+      for (let id = 0; id < itemscreate; id++) {
+        var removeitem = document.getElementById("sijainti" + id.toString());
+        removeitem.remove();
+      }
     }
   }
   return (
@@ -27,7 +52,7 @@ const Page2 = () => {
         <div className="mid-grid">
           <div></div>
 
-          <div className="mid">
+          <div className="mid" id="mid">
 
             <div>
                 <div className="circle" style={{"margin-left":"-11%"}}>
@@ -41,27 +66,40 @@ const Page2 = () => {
 
             
             <p className="question">Yrityksen sijainti:</p>
+            <div className="sijainti-container">
             <textarea className="answer" rows="1" cols="70" id="answer1" onChange={() => localStorage.setItem("p2a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p2a1")}></textarea>
+            </div>
 
-            <div style={{"margin-bottom":"40px"}} onChange={() => (document.getElementById("2").checked === true) ? (document.getElementById("tpsijaintip").style.display = "",document.getElementById("optionalanswer1").style.display = "") : (document.getElementById("tpsijaintip").style.display = "none",document.getElementById("optionalanswer1").style.display = "none",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : document.getElementById("ttvalinta").style.display = "none")}>
+            <div style={{"margin-bottom":"40px"}} onChange={() => (document.getElementById("2").checked === true) ? (document.getElementById("tpsijaintip").style.display = "",document.getElementById("optionalanswer1").style.display = "",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : (document.getElementById("ttvalinta").style.display = "none")) : (document.getElementById("tpsijaintip").style.display = "none",document.getElementById("optionalanswer1").style.display = "none",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : (document.getElementById("ttvalinta").style.display = "none"))}>
               <input type={"checkbox"} id="1" name="Valinta" value="1"></input>
               <label for="1">Etätyö tai monta sijaintia</label>
               <input type={"checkbox"} id="2" name="Valinta" value="2"></input>
               <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
             </div>
 
-            <div style={{"margin-bottom":"40px",display:"none"}} id="ttvalinta" onChange={() => (document.getElementById("4").checked === true) ? (document.getElementById("sijainti1").style.display = "",document.getElementById("lisaasijainti").style.display = "") : (document.getElementById("sijainti1").style.display = "none",document.getElementById("lisaasijainti").style.display = "none")}>
+            <div style={{"margin-bottom":"40px",display:"none"}} id="ttvalinta">
               <input type={"checkbox"} id="3" name="Valinta" value="3"></input>
               <label for="3">Etätyö</label>
-              <input type={"checkbox"} id="4" name="Valinta" value="4"></input>
+              <input type={"checkbox"} id="4" name="Valinta" value="4" onClick={() => (document.getElementById("4").checked === true) ? (document.getElementById("lisaasijainti").style.display = "",(itemscreate !== 0) ?
+    createItems(itemscreate) : "") : (document.getElementById("lisaasijainti").style.display = "none",(itemscreate > 0) ?
+    destroyItems(itemscreate) : "")}></input>
               <label for="4">Monta sijaintia</label>
             </div>
 
-            <textarea className="answer" rows="1" cols="70" id="sijainti1" style={{display:"none"}} onChange={() => localStorage.setItem("p2sa1",document.getElementById("sijainti1").value)} defaultValue={localStorage.getItem("p2sa1")}></textarea>
-
-
             <p className="question" id="tpsijaintip" style={{display:"none"}}>Työpaikan sijainti:</p>
             <textarea className="answer" rows="1" cols="70" id="optionalanswer1" style={{display:"none"}} onChange={() => localStorage.setItem("p2oa1",document.getElementById("optionalanswer1").value)} defaultValue={localStorage.getItem("p2oa1")}></textarea>
+
+            <div className="add-button" id="lisaasijainti" style={{display:"none"}} onClick={() => {itemscreate++;localStorage.setItem("itemscreate",itemscreate); var sijainti = document.createElement("textarea");
+            sijainti.setAttribute("className","answer");
+            sijainti.setAttribute("rows","1");
+            sijainti.setAttribute("cols","70");
+            sijainti.setAttribute("id","sijainti" + itemscreate.toString());
+            sijainti.addEventListener("change",() => localStorage.setItem("p2sa" + itemscreate.toString(),document.getElementById("sijainti" + itemscreate.toString()).value));
+            sijainti.textContent = localStorage.getItem("p2sa" + itemscreate.toString());
+            var sijaintikenttä = document.getElementById("lisaasijainti");
+            sijaintikenttä.before(sijainti);}}>
+              <p className="add-button-text"><strong>+ Lisää sijainti</strong></p>
+            </div>
 
             <div>
                 <div className="circle" style={{"margin-left":"-11%"}}>

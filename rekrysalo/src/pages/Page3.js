@@ -40,10 +40,6 @@ const Page3 = () => {
             <p className="question" >Aseta vastausaika hakemuksiin liittyviin kysymyksiin:</p>
             <textarea className="answer" rows="1" cols="70" id="answer2" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p3a2",document.getElementById("answer2").value)} defaultValue={localStorage.getItem("p3a2")}></textarea>
 
-            <div className="add-button">
-              <p className="add-button-text"><strong>+ Lisää sijainti</strong></p>
-            </div>
-
             <p className="bluetext"><strong>Muista! </strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
             <div>

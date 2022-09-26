@@ -604,3 +604,18 @@ p{
 .Content {
   flex: 1 0 auto;
 }
+.sijainti-container {
+  position: relative;
+}
+.sijainti-container textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.sijainti-container div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+}

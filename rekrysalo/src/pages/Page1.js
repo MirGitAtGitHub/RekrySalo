@@ -38,12 +38,17 @@ const Page1 = () => {
     
             <div className="mid">
     
-              <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+              <div className="circle-parent">
+                <div className="circle" style={{"margin-left":"-10%"}}>
                   <p className="circle-text">!</p>
                 </div>
-                <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:</p>
+                <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja<br></br> tulevaisuudessa:</p>
+                <div className="circle" style={{"float":"right"}}>
+                  <p className="circle-text">?</p>
+                </div>
               </div>
+              
+              
     
               <textarea className="answer" rows="10" cols="70" id="answer1" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p1a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p1a1")}></textarea>
     
@@ -66,14 +71,15 @@ const Page1 = () => {
               
               <input type="datetime-local" id="rekryaika2" name="to_rekryaika" onChange={() => localStorage.setItem("p1d2",document.getElementById("rekryaika2").value)} defaultValue={localStorage.getItem("p1d2")}></input>
     
-              <div>
-    
-                <div className="circle" style={{"margin-left":"-11%"}}>
+              <div className="circle-parent">
+                <div className="circle" style={{"margin-left":"-10%"}}>
                   <p className="circle-text">!</p>
                 </div>
     
-                <p className="question" style={{"display": "inline-block", "margin-left":"3%"}}>Arvioi budjetti rekrytoinnille:</p>
-    
+                <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Arvioi budjetti rekrytoinnille:</p>
+                <div className="circle" style={{"float":"right"}}>
+                  <p className="circle-text">?</p>
+                </div>
               </div>
               
               <input className="number-input" type="text" id="budjetti" name="budjetti" defaultValue={localStorage.getItem("p1n1")} onBlur={(e) => {var a = [];
@@ -114,7 +120,7 @@ const Page1 = () => {
                 </div>
     
                 <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
-    
+                
               </div>
     
             </div>

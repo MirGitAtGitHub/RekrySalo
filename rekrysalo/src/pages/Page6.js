@@ -19,24 +19,34 @@ const Page6 = () => {
           <div></div>
 
           <div className="mid">
-            <div>
-              <div className="circle" style={{"margin-left":"-11%"}}>
+            <div className="circle-parent">
+              <div className="circle" style={{"margin-left":"-10%"}}>
                 <p className="circle-text">!</p>
               </div>
-              <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}><strong>Perehdytys kannattaa aina.
-                <br></br> Selkeä perehdytys varmistaa sujuvan työnaloituksen,</strong></p><p className="question" style={{"margin-bottom":"60px"}}><strong>säästäen aikaasi ja rahaasi.</strong></p>
+              <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}><strong>Perehdytys kannattaa aina.
+                <br></br> Selkeä perehdytys varmistaa sujuvan työnaloituksen,</strong></p>
+              
+              <div className="circle" style={{"float":"right"}}>
+                <p className="circle-text">?</p>
+              </div>
             </div>
-            
+            <p className="question" style={{"margin-bottom":"60px", "margin-left":"1%"}}><strong>säästäen aikaasi ja rahaasi.</strong></p>
+            <div className="circle-parent">
+              <div className="circle" style={{"float":"right"}}>
+                <p className="circle-text">?</p>
+              </div>
+            </div>
             <p className="question" style={{"margin-bottom":"50px"}}>Perehdytykseen tulee kuulua ainakin seuraavat kohdat:
                 <br></br>-Työvälineisiin, työympäristöön ja <br></br>sen toimintatapoihin perehtyminen,
                 <br></br>-Pelastusopastuksen järjestäminen,
                 <br></br>-Työterveyshuollon kartoitus ja
                 <br></br>-Työturvallisuuden menetelmien läpikäynti.</p>
+                
             <div>
               <div className="circle" style={{"margin-left":"-11%"}}>
                 <p className="circle-text">!</p>
               </div>
-              <p className="question" style={{"margin-bottom":"50px", "display":"inline-block", "margin-left":"3%"}}><strong>Säästät vaivaa tulevaisuudessa laatimalla perehdytyskansion sisällön jo ensimmäisen rekrytoinnin aikana.</strong></p>
+              <p className="question" style={{"margin-bottom":"50px", "display":"inline-block", "margin-left":"2%"}}><strong>Säästät vaivaa tulevaisuudessa laatimalla perehdytyskansion sisällön jo ensimmäisen rekrytoinnin aikana.</strong></p>
             </div>
             
             

@@ -558,6 +558,9 @@ p{
   font-weight: 500;
   margin-left: 5%;
 }
+.circle-parent{
+  width: 110%;
+}
 .circle{
   background-color: steelblue;
   border-radius: 100%;

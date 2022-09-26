@@ -77,6 +77,8 @@ const Page2 = () => {
             <div className="sijainti-container">
               <textarea className="answer" rows="1" cols="70" id="answer1" onChange={() => localStorage.setItem("p2a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p2a1")}></textarea>
             </div>
+            <p className="question">Yrityksen sijainti:</p>
+            <textarea className="answer" rows="1" cols="70" id="answer1" onChange={() => localStorage.setItem("p2a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p2a1")}></textarea>
 
             <div style={{"margin-bottom":"40px"}} onChange={() => (document.getElementById("2").checked === true) ? (document.getElementById("tpsijaintip").style.display = "",document.getElementById("optionalanswer1").style.display = "",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : (document.getElementById("ttvalinta").style.display = "none")) : (document.getElementById("tpsijaintip").style.display = "none",document.getElementById("optionalanswer1").style.display = "none",(document.getElementById("1").checked === true) ? document.getElementById("ttvalinta").style.display = "" : (document.getElementById("ttvalinta").style.display = "none"))}>
               <input type={"checkbox"} id="1" name="Valinta" value="1"></input>

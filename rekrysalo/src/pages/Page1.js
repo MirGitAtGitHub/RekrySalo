@@ -9,6 +9,11 @@ import{Link} from "react-router-dom";
 import {useEffect} from 'react';
 
 const Page1 = () => {
+  function showInfo(element){
+    var info = document.getElementById(element)
+    var visibility = info.style.visibility;
+    info.style.visibility = (visibility === "hidden") ? "" : "hidden";
+  }
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -82,7 +87,7 @@ const Page1 = () => {
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Arvioi budjetti rekrytoinnille:</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}}  onClick={() => showInfo("infobox")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -117,10 +122,11 @@ const Page1 = () => {
                 <p className="circle-text">!</p>
               </div>
   
-              <div className="circle">
-                <p className="circle-text">?</p>
-              </div>
-  
+              
+                <div className="circle">
+                  <p className="circle-text">?</p>
+                </div>
+              
               <p className="green-info">Vinkki- ja ohjenäppäimen takaa löydät vinkkejä ja <br></br> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</p>
               
             </div>
@@ -133,7 +139,7 @@ const Page1 = () => {
                 <p className="info-p">Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?</p>
               </div>
 
-              <div className="info-boxK">
+              <div className="info-boxK" id="infobox" style={{visibility: "hidden"}}>
                 <h2 className="info-header">Ohje:</h2>
                 <p className="info-p">Linkin takaa löydät palkkalaskurin, jolla pystyt arvioimaan palkkakuluja.</p>
                 <a href="https://www.palkka.fi/palkkalaskuri/index.htm" className="info-p"><strong>Palkkalaskuri</strong></a>

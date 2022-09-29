@@ -250,7 +250,7 @@ const Page2 = () => {
             <Link to={"/Page" + (parseInt(localStorage.getItem("pagenumber"))+1)}><div class="navigation-button-arrow-right"><h2 class="navigation-button-arrow-text">SEURAAVA</h2></div></Link>
           
             <br></br>
-            <div className="green-box" style={{"margin-top":"50px"}}>
+            <div className="green-box" style={{"margin-top":"30px"}}>
               <div className="circle">
                 <p className="circle-text">!</p>
               </div>

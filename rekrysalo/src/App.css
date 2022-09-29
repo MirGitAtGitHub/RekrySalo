@@ -595,6 +595,46 @@ p{
 
 
 
+/*Info*/
+.info-boxH{
+  float: right;
+  padding: 3%;
+  margin: 5%;
+  background-color: steelblue;
+  width: 60%;
+  border-radius: 5px;
+}
+.info-boxK{
+  float: left;
+  padding: 3%;
+  margin: 5%;
+  background-color: steelblue;
+  width: 60%;
+  border-radius: 5px;
+}
+.info-header{
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin: 0;
+  margin-top: 5%;
+}
+.info-p{
+  float: left;
+  margin-top: 5%;
+}
+a:before{
+  color: white;
+}
+a::after{
+  color: white;
+}
+a:default{
+  color: white;
+}
+
+
+
 /*Error screen picture*/
 .uushtml{
   margin-top: 0;

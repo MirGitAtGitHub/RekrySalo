@@ -16,7 +16,20 @@ const Page6 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div>
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Lisää tietoa työturvallisuuslaista:</p>
+              <a href="https://www.finlex.fi/fi/laki/ajantasa/2002/20020738" className="info-p"><strong>Työturvallisuus</strong></a>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Perehdytyskansio on infopaketti yrityksesi uudelle työntekijälle.</p>
+              <p className="info-p">Perehdytyskansion löydät täältä:</p>
+              <a href="https://www.perehdytysopas.fi" className="info-p"><strong>Perehdytyspohja</strong></a>
+            </div>
+          </div>
 
           <div className="mid">
             <div className="circle-parent">
@@ -67,7 +80,17 @@ const Page6 = () => {
             </div>
 
           </div>
-          <div></div>
+          <div>
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Mieti kuka vastaa perehdytyksestä.</p>
+            </div>
+
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Perehdytys on työturvallisuuslain nojalla pakollinen toteuttaa.</p>
+            </div>
+          </div>
         </div>
 
         <div className="footer">

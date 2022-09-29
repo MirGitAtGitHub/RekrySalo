@@ -16,7 +16,13 @@ const Page5 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div>
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytävää pohjaa:</p>
+              <a href="https://www.tyosuojelu.fi/documents/14660/338901/Työsopimus/20ded5b7-fd41-4f9a-b5b2-6418288f860c" className="info-p"><strong>Sopimuspohja</strong></a>
+            </div>
+          </div>
 
           <div className="mid">
             <div>

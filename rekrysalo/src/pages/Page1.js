@@ -135,7 +135,7 @@ const Page1 = () => {
 
               <div className="info-boxK">
                 <h2 className="info-header">Ohje:</h2>
-                <p className="info-p">Linkin takaa löydät palkkalaskurin, jolla pystyt arvioimaan palkkakuluja.</p><br></br>
+                <p className="info-p">Linkin takaa löydät palkkalaskurin, jolla pystyt arvioimaan palkkakuluja.</p>
                 <a href="https://www.palkka.fi/palkkalaskuri/index.htm" className="info-p"><strong>Palkkalaskuri</strong></a>
                 <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi.</p>
               </div>

@@ -25,7 +25,12 @@ const Page4 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div>
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>
+            </div>
+          </div>
 
           <div className="mid">
             <p className="question">Miten työhön haastattelu toteutetaan?</p>
@@ -67,7 +72,13 @@ const Page4 = () => {
             </div>
 
           </div>
-          <div></div>
+          <div>
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Kehitä kysymykset, jotka luovat keskustelua.(Vältä kyllä ja ei vastauksia)</p>
+              <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi</p>
+            </div>
+          </div>
         </div>
 
         <div className="footer">

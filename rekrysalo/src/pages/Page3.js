@@ -25,7 +25,22 @@ const Page3 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div className="empty-div">
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Yrityskuvan kannalta on hyvä vastata kaikille hakijoille.</p>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus:</p>
+              <p className="info-p">- Ole täsmällinen.<br></br>
+                                    - Arvosta hakemuskia.<br></br>
+                                    - Ole kohtelias.</p>
+            </div>
+            
+            
+          </div>
 
           <div className="mid">
             
@@ -88,7 +103,25 @@ const Page3 = () => {
             </div>
 
           </div>
-          <div></div>
+          <div className="empty-div">
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Varmista, että sinulla on aikaa hakijoiden yhteydenotoille.</p>
+              <p className="info-p">Anna mahdollisimman joustava aikahaarukka koska olet tavoitettavissa ja huolehdi, että pidät siitä kiinni.</p>
+            </div>
+
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Kerro haastattelevalle kenet hän tapaa, missä ja milloin.</p>
+              <p className="info-p">Kerro myös mitä hänen tulee ottaa mukaan haastatteluun.(esim. todistukset)</p>
+              <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi.</p>
+            </div>
+
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi.</p>
+            </div>
+          </div>
         </div>
 
         <div className="footer">

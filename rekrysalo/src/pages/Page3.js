@@ -4,6 +4,11 @@ import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
 import {useEffect} from 'react';
 const Page3 = () => {
+  function showInfo(element){
+    var info = document.getElementById(element)
+    var visibility = info.style.visibility;
+    info.style.visibility = (visibility === "hidden") ? "" : "hidden";
+  }
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -26,12 +31,12 @@ const Page3 = () => {
 
         <div className="mid-grid">
           <div className="empty-div">
-            <div className="info-boxH">
+            <div className="info-boxH" id="p3infobox1" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Yrityskuvan kannalta on hyvä vastata kaikille hakijoille.</p>
             </div>
 
-            <div className="info-boxH">
+            <div className="info-boxH" id="p3infobox2" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus:</p>
               <p className="info-p">- Ole täsmällinen.<br></br>
@@ -45,11 +50,11 @@ const Page3 = () => {
           <div className="mid">
             
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p3infobox1")}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Miten ja milloin olet tavoitettavissa<br></br> hakemuksiin liittyen?</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p3infobox3")}>
                   <p className="circle-text">?</p>
               </div>
             </div>
@@ -61,12 +66,12 @@ const Page3 = () => {
             <p className="bluetext"><strong>Muista! </strong>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p3infobox2")}>
                 <p className="circle-text">!</p>
               </div>
               
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Luonnostele kutsu haastatteluun:</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p3infobox4")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -75,7 +80,7 @@ const Page3 = () => {
             
             <div className="circle-parent">
               <p className="question" style={{"display":"inline-block"}}>Miten hylättyihin hakemuksiin vastataan? Luo vastauspohja.</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p3infobox5")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -104,20 +109,20 @@ const Page3 = () => {
 
           </div>
           <div className="empty-div">
-            <div className="info-boxK">
+            <div className="info-boxK" id="p3infobox3" style={{visibility: "hidden"}}>
               <h2 className="info-header">Ohje:</h2><br></br>
               <p className="info-p">Varmista, että sinulla on aikaa hakijoiden yhteydenotoille.</p>
               <p className="info-p">Anna mahdollisimman joustava aikahaarukka koska olet tavoitettavissa ja huolehdi, että pidät siitä kiinni.</p>
             </div>
 
-            <div className="info-boxK">
+            <div className="info-boxK" id="p3infobox4" style={{visibility: "hidden"}}>
               <h2 className="info-header">Ohje:</h2><br></br>
               <p className="info-p">Kerro haastattelevalle kenet hän tapaa, missä ja milloin.</p>
               <p className="info-p">Kerro myös mitä hänen tulee ottaa mukaan haastatteluun.(esim. todistukset)</p>
               <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi.</p>
             </div>
 
-            <div className="info-boxK">
+            <div className="info-boxK" id="p3infobox5" style={{visibility: "hidden"}}>
               <h2 className="info-header">Ohje:</h2><br></br>
               <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi.</p>
             </div>

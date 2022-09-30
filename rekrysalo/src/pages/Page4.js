@@ -4,6 +4,11 @@ import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
 import {useEffect} from 'react';
 const Page4 = () => {
+  function showInfo(element){
+    var info = document.getElementById(element)
+    var visibility = info.style.visibility;
+    info.style.visibility = (visibility === "hidden") ? "" : "hidden";
+  }
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -26,7 +31,7 @@ const Page4 = () => {
 
         <div className="mid-grid">
           <div>
-            <div className="info-boxH">
+            <div className="info-boxH" id="p4infobox1" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>
             </div>
@@ -41,11 +46,11 @@ const Page4 = () => {
             </select>
 
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p4infobox1")}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Suunnittele haastattelurunko:</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p4infobox2")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -73,7 +78,7 @@ const Page4 = () => {
 
           </div>
           <div>
-            <div className="info-boxK">
+            <div className="info-boxK" id="p4infobox2" style={{visibility: "hidden"}}>
               <h2 className="info-header">Ohje:</h2><br></br>
               <p className="info-p">Kehitä kysymykset, jotka luovat keskustelua.(Vältä kyllä ja ei vastauksia)</p>
               <p className="info-p">Voit kopioida esimerkkivastauksen itsellesi</p>

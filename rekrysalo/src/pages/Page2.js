@@ -4,6 +4,11 @@ import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
 import{useEffect} from "react";
 const Page2 = () => {
+  function showInfo(element){
+    var info = document.getElementById(element)
+    var visibility = info.style.visibility;
+    info.style.visibility = (visibility === "hidden") ? "" : "hidden";
+  }
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -18,7 +23,7 @@ const Page2 = () => {
     }
   }
   return (
-    <html>
+    <div className="html" style={{paddingTop: "1%"}}>
       <body className="Body">
         <div className="Header">
           <TopFooter text="TYÖPAIKKAILMOITUS" current="2" />
@@ -30,7 +35,7 @@ const Page2 = () => {
           <div className="mid" id="mid">
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox1")}>
                   <p className="circle-text">!</p>
                 </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Suosituimmat työpaikkojen hakukoneet:<br></br>
@@ -42,7 +47,7 @@ const Page2 = () => {
             <div className="circle-parent">
               
 
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p1infobox3")}>
                 <p className="circle-text">?</p>
               </div>
             
@@ -54,24 +59,24 @@ const Page2 = () => {
             </div>
 
             <div style={{"margin-bottom":"40px"}}>
-              <input type={"checkbox"} id="1" name="Valinta" value="1" onClick={() => ((document.getElementById("1").checked === true && document.getElementById("2").checked === true) ? (document.getElementById("2").checked = false,document.getElementById("tyopaikansijainti").style.display = "none") : "",(document.getElementById("1").checked === true) ? document.getElementById("etatiedottaisijainnit").style.display = "" : document.getElementById("etatiedottaisijainnit").style.display = "none",localStorage.setItem("p2cb1",(document.getElementById("1").checked === true) ? "true" : "false"))} defaultChecked={(localStorage.getItem("p2cb1") === "true") ? true : false}></input>
+              <input type={"checkbox"} id="1" name="Valinta" value="1" onClick={() => ((document.getElementById("1").checked === true && document.getElementById("2").checked === true) ? (document.getElementById("2").checked = false,localStorage.setItem("p2cb1",(document.getElementById("1").checked === true) ? "true" : ""),localStorage.setItem("p2cb2",(document.getElementById("2").checked === false) ? "false" : ""),document.getElementById("tyopaikansijainti").style.display = "none") : "",(document.getElementById("1").checked === true) ? (document.getElementById("etatiedottaisijainnit").style.display = "",localStorage.setItem("p2cb1",(document.getElementById("1").checked === true) ? "true" : "")) : (document.getElementById("etatiedottaisijainnit").style.display = "none",localStorage.setItem("p2cb1",(document.getElementById("1").checked === false) ? "false" : "")))} defaultChecked={(localStorage.getItem("p2cb1") === "true") ? true : false}></input>
               <label for="1">Etätyö tai monta sijaintia</label>
-              <input type={"checkbox"} id="2" name="Valinta" value="2" onClick={() => ((document.getElementById("2").checked === true && document.getElementById("1").checked === true) ? (document.getElementById("1").checked = false,document.getElementById("etatiedottaisijainnit").style.display = "none",localStorage.setItem("p2cb2",(document.getElementById("2").checked === true) ? "true" : "false"),localStorage.setItem("p2cb1",(document.getElementById("1").checked === true) ? "true" : "false")) : "",(document.getElementById("2").checked === true) ? document.getElementById("tyopaikansijainti").style.display = "" : document.getElementById("tyopaikansijainti").style.display = "none")} defaultChecked={(localStorage.getItem("p2cb2") === "true") ? true : false}></input>
+              <input type={"checkbox"} id="2" name="Valinta" value="2" onClick={() => ((document.getElementById("2").checked === true && document.getElementById("1").checked === true) ? (document.getElementById("1").checked = false,localStorage.setItem("p2cb2",(document.getElementById("2").checked === true) ? "true" : ""),localStorage.setItem("p2cb1",(document.getElementById("1").checked === false) ? "false" : ""),document.getElementById("etatiedottaisijainnit").style.display = "none",localStorage.setItem("p2cb2",(document.getElementById("2").checked === true) ? "true" : "false"),localStorage.setItem("p2cb1",(document.getElementById("1").checked === true) ? "true" : "false")) : "",(document.getElementById("2").checked === true) ? (document.getElementById("tyopaikansijainti").style.display = "",localStorage.setItem("p2cb2",(document.getElementById("2").checked === true) ? "true" : "")) : (document.getElementById("tyopaikansijainti").style.display = "none",localStorage.setItem("p2cb2",(document.getElementById("2").checked === false) ? "false" : "")))} defaultChecked={(localStorage.getItem("p2cb2") === "true") ? true : false}></input>
               <label for="2">Työpaikalla on eri sijainti kuin yrityksellä</label>
             </div>
 
-            <div id="etatiedottaisijainnit" style={{display:"none"}}>
+            <div id="etatiedottaisijainnit" style={{display:(localStorage.getItem("p2cb1") === "true") ? "" : "none"}}>
               <p className="question" id="tpsijaintip">Etätyön tiedot tai työpaikan sijainnit:</p>
               <textarea className="answer" rows="1" cols="70" id="optionalanswer1" onChange={() => localStorage.setItem("p2oa1",document.getElementById("optionalanswer1").value)} defaultValue={localStorage.getItem("p2oa1")}></textarea>
             </div>
 
-            <div id="tyopaikansijainti" style={{display: "none"}}>
+            <div id="tyopaikansijainti" style={{display:(localStorage.getItem("p2cb2") === "true") ? "" : "none"}}>
               <p className="question" id="tpsijaintip">Työpaikan sijainti:</p>
               <textarea className="answer" rows="1" cols="70" id="optionalanswer2" onChange={() => localStorage.setItem("p2oa2",document.getElementById("optionalanswer2").value)} defaultValue={localStorage.getItem("p2oa2")}></textarea>
             </div>
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox2")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Miten kuvailisit yrityksen toimintaa?</p>
@@ -96,7 +101,7 @@ const Page2 = () => {
             </select>
             
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox4")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Tehtävänimike:</p>
@@ -223,7 +228,7 @@ const Page2 = () => {
         </div>
       </body>
 
-    </html>
+    </div>
   )
 }
 

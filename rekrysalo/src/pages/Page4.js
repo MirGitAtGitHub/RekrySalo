@@ -58,7 +58,7 @@ const Page4 = () => {
             <textarea className="answer" rows="10" cols="70" id="answer1" onChange={() => localStorage.setItem("p4a1",document.getElementById("answer1").value)} defaultValue={localStorage.getItem("p4a1")}></textarea>
 
             <div>
-              <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki" style={{"margin-bottom":"50px"}}></input>
+              <input type={"checkbox"} id="1" name="Esimerkki" value="Esimerkki" style={{"margin-bottom":"50px"}} onClick={() => localStorage.setItem("p4cb1",(document.getElementById("1").checked === true) ? "true" : "false")} defaultChecked={(localStorage.getItem("p4cb1") === "true") ? true : false}></input>
               <label for="1">Esimerkkikysymyksiä:</label>
             </div>
 

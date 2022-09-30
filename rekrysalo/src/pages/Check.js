@@ -109,7 +109,7 @@ const Check = () => {
             </div>
 
             <p className="question">Yhteyshenkilöt ja heidän yhteystietonsa:</p>
-            <textarea readOnly className="answer" rows="1" cols="70" id="p2a8" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}} defaultValue={localStorage.getItem("p2a8")}> </textarea>
+            <textarea readOnly className="answer" rows="1" cols="70" id="p2a8" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}}>{localStorage.getItem("p2a8")}</textarea>
           
           
 

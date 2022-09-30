@@ -189,7 +189,7 @@ const Page2 = () => {
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Yhteyshenkilöt ja heidän yhteystietonsa:</p>
             </div>
            
-            <textarea className="answer" rows="1" cols="70" id="answer8" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p2a8",document.getElementById("answer8").value)} defaultValue={localStorage.getItem("p2a8")}> </textarea>
+            <textarea className="answer" rows="1" cols="70" id="answer8" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p2a8",document.getElementById("answer8").value)} defaultValue={localStorage.getItem("p2a8")}></textarea>
 
             <div>
                 <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox6")}>

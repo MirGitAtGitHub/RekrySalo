@@ -52,7 +52,44 @@ const Page2 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div>
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa.</p>
+              <a href="https://fi-fi.facebook.com" className="info-p" style={{"padding-right": "50%"}}><strong>Facebook</strong></a>
+              <a href="https://www.instagram.com" className="info-p" style={{"padding-right": "50%"}}><strong>Instagram</strong></a>
+              <a href="https://twitter.com/?lang=eng" className="info-p"><strong>Twitter</strong></a>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi.</p>
+              <p className="info-p">Kerro mitä yrityksesi tarjoaa hakijalle.</p>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi</p>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Anna mahdollisimman selkeä kuvaus työs sisällöstä</p>
+              <p className="info-p">Älä jaarittele, pidä tekstilohkot lyhyinä.</p>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Muista mainita mikäli otat vastaan video CV:itä</p>
+            </div>
+
+            <div className="info-boxH">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Kuvalliset ilmoitukset saavat enemmän huomiota</p>
+              <p className="info-p">Valitse sellainen kuva, joka vahvistaa yrityskuvaasi.</p>
+              <p className="info-p">Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>
+            </div>
+          </div>
 
           <div className="mid" id="mid">
 
@@ -261,7 +298,27 @@ const Page2 = () => {
             </div>
 
           </div>
-          <div></div>
+          <div>
+            <div className="info-boxK">
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>
+            </div>
+
+            <div className="info-boxK">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Kerro mitä odotat työntekijöiltä:<br></br>
+                                    - osaaminen<br></br>
+                                    - työkokemus<br></br>
+                                    - koulutus<br></br>
+                                    - muut vaatimukset (esim. lupakortit)</p>
+              <p className="info-p">Erittele mitä vaadit ja mitä katsot eduksi.</p>                   
+            </div>
+
+            <div className="info-boxK">
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Mistä mihin asti ilmoituksesi on esillä</p>
+            </div>
+          </div>
         </div>
 
         <div className="footer">

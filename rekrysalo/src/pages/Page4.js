@@ -23,7 +23,7 @@ const Page4 = () => {
     }
   }
   return (
-    <html>
+    <div className="html" style={{paddingTop: "1%"}}>
       <body className="Body">
         <div className="Header">
           <TopFooter text="HAASTATTELU" current="4" />
@@ -90,7 +90,7 @@ const Page4 = () => {
           <Footer />
         </div>
       </body>
-    </html>
+    </div>
   )
 }
 

@@ -29,7 +29,7 @@ const Page1 = () => {
   }
     return (
 
-      <html>
+      <div className="html" style={{paddingTop: "1%"}}>
         <body className="Body">
           <div className="Header">
             <TopFooter text="OSAAMISEN TARVE" current="1" />
@@ -155,7 +155,7 @@ const Page1 = () => {
     
         </body>
     
-      </html>
+      </div>
       
       )
   }

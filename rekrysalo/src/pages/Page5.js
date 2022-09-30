@@ -14,7 +14,7 @@ const Page5 = () => {
   }, []);
   localStorage.setItem("pagenumber","5");
   return (
-    <html>
+    <div className="html" style={{paddingTop: "1%"}}>
       <body className="Body">
         <div className="Header">
           <TopFooter text="SOPIMUS" current="5" />
@@ -66,7 +66,7 @@ const Page5 = () => {
           <Footer />
         </div>
       </body>
-    </html>
+    </div>
   )
 }
 

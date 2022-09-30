@@ -10,6 +10,7 @@ import Page6 from './pages/Page6';
 import NoPage from "./pages/NoPage";
 import TestPage from './pages/TestPage';
 import Check from './pages/Check';
+import Print from './pages/Print';
 
 
 
@@ -28,6 +29,7 @@ function App(props) {
           <Route path={"/TestPage"} element={<TestPage />} />
           <Route path={"/Home"} element={<Home />} />
           <Route path={"/Check"} element={<Check />} />
+          <Route path={"/Print"} element={<Print />} />
 
       </Routes>
     </BrowserRouter>

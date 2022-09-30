@@ -4,11 +4,6 @@ import{TopFooter} from "../modules/TopFooter";
 import{Link} from "react-router-dom";
 import {useEffect} from 'react';
 const Page5 = () => {
-  function showInfo(element){
-    var info = document.getElementById(element)
-    var visibility = info.style.visibility;
-    info.style.visibility = (visibility === "hidden") ? "" : "hidden";
-  }
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -22,7 +17,7 @@ const Page5 = () => {
 
         <div className="mid-grid">
           <div>
-            <div className="info-boxH" id="p5infobox1" style={{visibility: "hidden"}}>
+            <div className="info-boxH">
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytävää pohjaa:</p>
               <a href="https://www.tyosuojelu.fi/documents/14660/338901/Työsopimus/20ded5b7-fd41-4f9a-b5b2-6418288f860c" className="info-p"><strong>Sopimuspohja</strong></a>
@@ -31,7 +26,7 @@ const Page5 = () => {
 
           <div className="mid">
             <div>
-              <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p5infobox1")}>
+              <div className="circle" style={{"margin-left":"-11%"}}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"3%"}}>Työsopimus voi olla kirjallinen, suullinen tai sähköinen.<strong>Työsopimuksen laatiminen kirjallisesti</strong></p><p className="question" style={{"margin-bottom":"30px"}}><strong> on suositeltavaa, </strong>jotta sovitut asiat voidaan tarvittaessa tarkistaa.</p>

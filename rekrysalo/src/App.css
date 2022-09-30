@@ -635,6 +635,21 @@ a:default{
 
 
 
+.savebtn{
+  float: left;
+  text-align: center;
+  margin-top: 5%;
+  background-color: steelblue;
+  width: 50%;
+  border-radius: 5px;
+}
+.saveheader{
+  padding-top: 0;
+  color: white;
+}
+
+
+
 /*Error screen picture*/
 .uushtml{
   margin-top: 0;

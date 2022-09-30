@@ -138,6 +138,9 @@ const Check = () => {
             <p className="question">Suunnittele haastattelurunko:</p>
             <textarea readOnly className="answer" rows="10" cols="70" id="p4a1" style={{"border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p4a1")}></textarea>
 
+            <div className="savebtn">
+              <h3 className="saveheader">Tallenna PDF-tiedostona</h3>
+            </div>
         </div>
         <div className="empty-div"></div>
       </div>

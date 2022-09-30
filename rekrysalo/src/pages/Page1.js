@@ -43,6 +43,13 @@ const Page1 = () => {
               <p className="info-p">Virherekrytointi on suurin vältettävissä oleva menoerä.</p>
             </div>
 
+            <div className="info-boxH" id="p1infobox5" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Varaa rekrytointiin tarpeekis aikaa.</p>
+              <p className="info-p">pidä aikataulusta kiinni.</p>
+              <p className="info-p">Yleensä pienyrittäjän rekrytointiin kuluu aikaa noin kuukausi, josta työaikaa on noin 2-5 kokonaista työpäivää.</p>
+            </div>
+
             <div className="info-boxH" id="p1infobox2" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Vastavalmistunut tai vastaava on aluksi halvempi palkattava, toisin perehdytys vie alkuun siivun tuottavuudesta.</p>
@@ -76,12 +83,21 @@ const Page1 = () => {
               <label for="r3">Esimerkki C</label>
             </div>
               
-            <p className="question">Aseta rekrytoinnin ajankohta:</p>
-            
+            <div className="circle-parent">
+             <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p1infobox5")}>
+                <p className="circle-text">!</p>
+              </div>
+
+              <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Aseta rekrytoinnin ajankohta:</p>
+
+              <div className="circle" style={{"float":"right"}}  onClick={() => showInfo("p1infobox6")}>
+                <p className="circle-text">?</p>
+              </div>
+            </div>
+
             <input type="datetime-local" id="rekryaika1" name="rekryaika" style={{"margin-right":"20px"}} onChange={() => localStorage.setItem("p1d1",document.getElementById("rekryaika1").value)} defaultValue={localStorage.getItem("p1d1")}></input>
-            
             <input type="datetime-local" id="rekryaika2" name="to_rekryaika" onChange={() => localStorage.setItem("p1d2",document.getElementById("rekryaika2").value)} defaultValue={localStorage.getItem("p1d2")}></input>
-  
+            
             <div className="circle-parent">
               <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p1infobox2")}>
                 <p className="circle-text">!</p>
@@ -137,6 +153,12 @@ const Page1 = () => {
               <div className="info-boxK" id="p1infobox3" style={{visibility: "hidden"}}>
                 <h2 className="info-header">Ohje:</h2>
                 <p className="info-p">Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?</p>
+              </div>
+
+              <div className="info-boxK" id="p1infobox6" style={{visibility: "hidden"}}>
+                <h2 className="info-header">Vinkki:</h2><br></br>
+                <p className="info-p">Mieti eri vaiheet ja kuka vastaa mistäkin vaiheesta.</p>
+                <p className="info-p">Voit kopioda esimerkkivastauksen itsellesi.</p>
               </div>
 
               <div className="info-boxK" id="p1infobox4" style={{visibility: "hidden"}}>

@@ -30,12 +30,49 @@ const Page2 = () => {
         </div>
 
         <div className="mid-grid">
-          <div></div>
+          <div className="empty-div">
+            <div className="info-boxH" id="p2infobox1" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa.</p>
+              <a href="https://fi-fi.facebook.com" className="info-p" style={{paddingRight: "50px"}}><strong>Facebook</strong></a>
+              <a href="https://www.instagram.com" className="info-p" style={{paddingRight: "50px"}}><strong>Instagram</strong></a>
+              <a href="https://twitter.com/?lang=fi" className="info-p" style={{paddingRight: "50px"}}><strong>Twitter</strong></a>
+            </div>
+
+            <div className="info-boxH" id="p2infobox2" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoita.</p>
+              <p className="info-p">Kerro mitä yrityksesi tarjoaa hakijalle.</p>
+            </div>
+
+            <div className="info-boxH" id="p2infobox3" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>
+            </div>
+
+            <div className="info-boxH" id="p2infobox4" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Anna mahdollisimman selkeä kuvaus työn sisällöstä.</p>
+              <p className="info-p">Älä jaarittele, pidä tekstilohkot lyhyinä.</p>
+            </div>
+
+            <div className="info-boxH" id="p2infobox5" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Muista mainita mikäli otat vastaan video CV:itä.</p>
+            </div>
+
+            <div className="info-boxH" id="p2infobox6" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Vinkki:</h2><br></br>
+              <p className="info-p">Kuvalliset ilmoitukset saavat enemmän huomiota.</p>
+              <p className="info-p">Valitse sellainen kuva, joka vahvistaa yrityskuvaasi.</p>
+              <p className="info-p">videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>
+            </div>
+          </div>
 
           <div className="mid" id="mid">
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox1")}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox1")}>
                   <p className="circle-text">!</p>
                 </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Suosituimmat työpaikkojen hakukoneet:<br></br>
@@ -47,7 +84,7 @@ const Page2 = () => {
             <div className="circle-parent">
               
 
-              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p1infobox3")}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p2infobox7")}>
                 <p className="circle-text">?</p>
               </div>
             
@@ -76,7 +113,7 @@ const Page2 = () => {
             </div>
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox2")}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox2")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Miten kuvailisit yrityksen toimintaa?</p>
@@ -101,7 +138,7 @@ const Page2 = () => {
             </select>
             
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p1infobox4")}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox3")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Tehtävänimike:</p>
@@ -110,11 +147,11 @@ const Page2 = () => {
             <textarea className="answer" rows="1" cols="70" id="answer3" style={{"margin-bottom":"40px"}} onChange={() => localStorage.setItem("p2a3",document.getElementById("answer3").value)} defaultValue={localStorage.getItem("p2a3")}></textarea>
 
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p2infobox4")}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Työn kuvaus:</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p2infobox8")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -137,7 +174,7 @@ const Page2 = () => {
               <div className="circle-parent">
                 <label className="question" style={{"display":"inline-block"}}>Ilmoituksen julkaisuaika:</label><br></br>
 
-                <div className="circle" style={{"float":"right"}}>
+                <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p2infobox9")}>
                   <p className="circle-text">?</p>
                 </div>
               </div>
@@ -146,7 +183,7 @@ const Page2 = () => {
             </div>
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox5")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Yhteyshenkilöt ja heidän yhteystietonsa:</p>
@@ -155,7 +192,7 @@ const Page2 = () => {
             <textarea className="answer" rows="1" cols="70" id="answer8" style={{"margin-bottom":"50px"}} onChange={() => localStorage.setItem("p2a8",document.getElementById("answer8").value)} defaultValue={localStorage.getItem("p2a8")}> </textarea>
 
             <div>
-                <div className="circle" style={{"margin-left":"-11%"}}>
+                <div className="circle" style={{"margin-left":"-11%"}} onClick={() => showInfo("p2infobox6")}>
                   <p className="circle-text">!</p>
                 </div>
                 <p className="question" style={{"display":"inline-block", "margin-left":"2%"}}>Muutaman yleisimmän työnhakusivuston <br></br> vaatimukset lähettävän kuvan ja videon suhteen.</p>
@@ -220,7 +257,28 @@ const Page2 = () => {
             </div>
 
           </div>
-          <div></div>
+          <div>
+            <div className="info-boxK" id="p2infobox7" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>
+            </div>
+
+            <div className="info-boxK" id="p2infobox8" style={{visibility: "hidden"}}>
+              <h2 className="info-header">Ohje:</h2><br></br>
+              <p className="info-p">Kerro mitä odotat työnhakijoilta:<br></br>
+                                    - osaaminen<br></br>
+                                    - työkokemus<br></br>
+                                    - koulutus<br></br>
+                                    - muut vaatimukset (esim. lupakortit)</p>
+
+              <p className="info-p">Erittele mitä vaadit ja mitä katsot eduksi.</p>
+            </div>
+
+            <div className="info-boxK" id="p2infobox9" style={{visibility: "hidden"}}>
+              <h2 className="info-header">ohje:</h2><br></br>
+              <p className="info-p">Mistä mihin ilmoituksesi on esillä.</p>
+            </div>
+          </div>
         </div>
 
         <div className="footer">

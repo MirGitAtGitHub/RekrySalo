@@ -37,13 +37,13 @@ const Page1 = () => {
           <div className="mid-grid">
 
           <div className="empty-div">
-            <div className="info-boxH">
+            <div className="info-boxH" id="p1infobox1" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Tekijän löytäminen on helpompaa kun tiedät, mitä tarvitset.</p>
               <p className="info-p">Virherekrytointi on suurin vältettävissä oleva menoerä.</p>
             </div>
 
-            <div className="info-boxH">
+            <div className="info-boxH" id="p1infobox2" style={{visibility: "hidden"}}>
               <h2 className="info-header">Vinkki:</h2><br></br>
               <p className="info-p">Vastavalmistunut tai vastaava on aluksi halvempi palkattava, toisin perehdytys vie alkuun siivun tuottavuudesta.</p>
               <p className="info-p">Kokenut osaaja taas voi tuoda yritykselle suurempia tuloja nopeammin, mutta on kalliimpi palkattava.</p>
@@ -52,11 +52,11 @@ const Page1 = () => {
 
           <div className="mid">
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p1infobox1")}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Mieti, millaista osaamista yrityksesi tarvitsee nyt ja<br></br> tulevaisuudessa:</p>
-              <div className="circle" style={{"float":"right"}}>
+              <div className="circle" style={{"float":"right"}} onClick={() => showInfo("p1infobox3")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -83,11 +83,11 @@ const Page1 = () => {
             <input type="datetime-local" id="rekryaika2" name="to_rekryaika" onChange={() => localStorage.setItem("p1d2",document.getElementById("rekryaika2").value)} defaultValue={localStorage.getItem("p1d2")}></input>
   
             <div className="circle-parent">
-              <div className="circle" style={{"margin-left":"-10%"}}>
+              <div className="circle" style={{"margin-left":"-10%"}} onClick={() => showInfo("p1infobox2")}>
                 <p className="circle-text">!</p>
               </div>
               <p className="question" style={{"display": "inline-block", "margin-left":"2%"}}>Arvioi budjetti rekrytoinnille:</p>
-              <div className="circle" style={{"float":"right"}}  onClick={() => showInfo("infobox")}>
+              <div className="circle" style={{"float":"right"}}  onClick={() => showInfo("p1infobox4")}>
                 <p className="circle-text">?</p>
               </div>
             </div>
@@ -118,12 +118,12 @@ const Page1 = () => {
   
             <div className="green-box" style={{"margin-top":"50px"}}>
   
-              <div className="circle">
+              <div className="circle" onClick={() => showInfo("infobox")}>
                 <p className="circle-text">!</p>
               </div>
   
               
-                <div className="circle">
+                <div className="circle" onClick={() => showInfo("infobox")}>
                   <p className="circle-text">?</p>
                 </div>
               
@@ -134,12 +134,12 @@ const Page1 = () => {
           </div>
     
             <div className="empty-div">
-              <div className="info-boxK">
+              <div className="info-boxK" id="p1infobox3" style={{visibility: "hidden"}}>
                 <h2 className="info-header">Ohje:</h2>
                 <p className="info-p">Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?</p>
               </div>
 
-              <div className="info-boxK" id="infobox" style={{visibility: "hidden"}}>
+              <div className="info-boxK" id="p1infobox4" style={{visibility: "hidden"}}>
                 <h2 className="info-header">Ohje:</h2>
                 <p className="info-p">Linkin takaa löydät palkkalaskurin, jolla pystyt arvioimaan palkkakuluja.</p>
                 <a href="https://www.palkka.fi/palkkalaskuri/index.htm" className="info-p"><strong>Palkkalaskuri</strong></a>

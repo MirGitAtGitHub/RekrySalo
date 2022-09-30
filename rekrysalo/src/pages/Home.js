@@ -8,7 +8,7 @@ const Home = () => {
   }, []);
   localStorage.setItem("pagenumber","0");
   return (
-    <html>
+    <div className="html" style={{paddingTop: "1%"}}>
       <body className="Body">
         <div className="home-grid">
           <div></div>
@@ -83,7 +83,7 @@ const Home = () => {
           <Footer />
         </div>
       </body>
-    </html>
+    </div>
   )
 }
 

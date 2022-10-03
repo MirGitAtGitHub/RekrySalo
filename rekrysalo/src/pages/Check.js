@@ -2,7 +2,6 @@
 import {Footer} from "../modules/Footer";
 import{TopFooter} from "../modules/TopFooter";
 import {useEffect} from 'react';
-import {Link} from "react-router-dom";
 const Check = () => {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -138,11 +137,11 @@ const Check = () => {
 
             <p className="question">Suunnittele haastattelurunko:</p>
             <textarea readOnly className="answer" rows="10" cols="70" id="p4a1" style={{"border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p4a1")}></textarea>
-            <Link to="/Print.js" target="_blank" download>
+            <a href="Print.js" download="Print.pdf">
               <div className="savebtn">
                 <h3 className="saveheader">Tallenna PDF-tiedostona</h3>
               </div>
-            </Link>
+            </a>
         </div>
         <div className="empty-div"></div>
       </div>

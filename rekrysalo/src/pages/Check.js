@@ -25,7 +25,7 @@ const Check = () => {
           <textarea readOnly className="answer" rows="10" cols="70" id="p1a1" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p1a1")}></textarea>
 
           <p className="question">Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:</p>
-          <textarea readOnly className="answer" rows="10" cols="70" id="p1a2" style={{"border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p1a2")}></textarea>
+          <textarea readOnly className="answer" rows="10" cols="70" id="p1a2" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p1a2")}></textarea>
             
           <p className="question">Aseta rekrytoinnin ajankohta:</p>
           
@@ -56,12 +56,12 @@ const Check = () => {
 
             <div id="etatiedottaisijainnit" style={{display:(localStorage.getItem("p2cb1") === "true") ? "" : "none"}}>
               <p className="question" id="tpsijaintip">Etätyön tiedot tai työpaikan sijainnit:</p>
-              <textarea readOnly className="answer" rows="1" cols="70" id="optionalanswer1" defaultValue={localStorage.getItem("p2oa1")}></textarea>
+              <textarea readOnly className="answer" rows="1" cols="70" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke"}} id="optionalanswer1" defaultValue={localStorage.getItem("p2oa1")}></textarea>
             </div>
 
             <div id="tyopaikansijainti" style={{display:(localStorage.getItem("p2cb2") === "true") ? "" : "none"}}>
               <p className="question" id="tpsijaintip">Työpaikan sijainti:</p>
-              <textarea readOnly className="answer" rows="1" cols="70" id="optionalanswer2" defaultValue={localStorage.getItem("p2oa2")}></textarea>
+              <textarea readOnly className="answer" rows="1" cols="70" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke"}} id="optionalanswer2" defaultValue={localStorage.getItem("p2oa2")}></textarea>
             </div>
 
 
@@ -71,24 +71,24 @@ const Check = () => {
             <textarea readOnly className="answer" rows="10" cols="70" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"40px"}} id="p2a2" defaultValue={localStorage.getItem("p2a2")}></textarea>
 
             <p className="question">Työsopimuksen tyyppi:</p>
-            <select className="Dropdown" name="valinta" id="P2Työ1" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"10px"}} defaultValue={localStorage.getItem("p2s1")}>
+            <select className="Dropdown" name="valinta" id="P2Työ1" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"10px"}} defaultValue={localStorage.getItem("p2s1")}>
               <option disabled className="boxed">Määräaikainen</option>
               <option disabled className="boxed">Toistaiseksi voimassa oleva</option>
               <option disabled className="boxed">Harjoittelija</option>
             </select>
 
             <p className="question">Työaika:</p>
-            <select className="Dropdown" name="valinta" id="P2Työ2" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"10px"}} defaultValue={localStorage.getItem("p2s2")}>
+            <select className="Dropdown" name="valinta" id="P2Työ2" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"10px"}} defaultValue={localStorage.getItem("p2s2")}>
               <option disabled className="boxed">Kokoaikainen</option>
               <option disabled className="boxed">Osa-aikainen</option>
             </select>
             
             <p className="question">Tehtävänimike:</p>
-            <textarea readOnly className="answer" rows="1" cols="70" id="p2a3" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"40px"}} defaultValue={localStorage.getItem("p2a3")}></textarea>
+            <textarea readOnly className="answer" rows="1" cols="70" id="p2a3" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"40px"}} defaultValue={localStorage.getItem("p2a3")}></textarea>
 
             
             <p className="question">Työn kuvaus:</p>
-            <textarea readOnly className="answer" rows="10" cols="70" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}} id="p2a4" defaultValue={localStorage.getItem("p2a4")}></textarea>
+            <textarea readOnly className="answer" rows="10" cols="70" style={{"margin-bottom":"40px", "border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}} id="p2a4" defaultValue={localStorage.getItem("p2a4")}></textarea>
 
             <p className="question">Ilmoittajan nimi:</p>
             <textarea readOnly className="answer" rows="1" cols="70" id="p2a5" style={{"border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p2a5")}></textarea>
@@ -125,7 +125,7 @@ const Check = () => {
             <textarea readOnly className="answer" rows="10" cols="70" id="p3a3" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}} defaultValue={localStorage.getItem("p3a3")}></textarea>
 
             <p className="question">Miten hylättyihin hakemuksiin vastataan? Luo vastauspohja.</p>
-            <textarea readOnly className="answer" rows="10" cols="70" id="p3a4" style={{"border": "3px solid black", "backgroundColor": "whitesmoke"}} defaultValue={localStorage.getItem("p3a4")}></textarea>
+            <textarea readOnly className="answer" rows="10" cols="70" id="p3a4" style={{"border": "3px solid black", "backgroundColor": "whitesmoke", "margin-bottom":"50px"}} defaultValue={localStorage.getItem("p3a4")}></textarea>
 
             {/*Page 4*/}
 
